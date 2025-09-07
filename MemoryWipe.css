@@ -1,0 +1,841 @@
+h1 {
+    text-align: center; /* Center the whole h1 element */
+}
+
+.first-text {
+        color: #DC143C;
+    font-weight: bold;
+     }     /* Makes the text thick/bold */
+
+.first-text1 {
+    font-family: Arial, sans-serif;
+    color: yellow;
+    font-size: 60px;
+}
+
+.first-text2 {
+        color: #DC143C;
+    font-weight: bold;   
+  }  /* Makes the text thick/bold */
+
+.content {
+    position: absolute;
+    top: 200px;        /* Move down from top (adjust as needed) */
+    left: 50%;         /* Move to horizontal center */
+    transform: translateX(-50%);
+    line-height: 0.5;
+    color: white
+     /* Center it perfectly */
+}
+.blue-stripe {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2560px;
+    height: 100px;
+    background: linear-gradient(to right, black 0%, #59C3F2 25%, #0066CC 50%, #59C3F2 75%, black 100%);
+    z-index: -2;
+}
+.transition {
+    position: absolute;
+    top: 95px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2560px;
+    height: 10px;
+    background: 
+        linear-gradient(to bottom, #59C3F2 0%, black 100%),
+        linear-gradient(to right, black 0%, #59C3F2 25%, #0066CC 50%, #59C3F2 75%, black 100%);
+    background-blend-mode: multiply;
+    z-index: -1;
+}
+
+.black-background {
+    position: fixed; /* Changed from absolute to fixed */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: -3;
+}
+.number10 {
+    margin-top: 500px;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(180, 0, 0);
+    text-align: center;
+    font-size: 36px;           /* Bigger text */
+    font-family: 'Impact', 'Arial Black', sans-serif;  /* Cool bold font */
+    font-weight: bold;         /* Extra bold */
+    color: rgb(41, 5, 5);              /* White text for contrast */
+    line-height: 60px;        /* Centers text vertically in the 60px height */
+}
+.tekst{
+    margin-top:-50px;
+    text-align: center;
+    color: rgb(2, 255, 255);
+    font-size: 50px;
+}
+.slika img {
+    margin-top: 0px;
+    margin-left: 0px;    /* Moves right, other elements respect this space */
+    width: 960px;
+    height: 480px;
+}
+.horizontal-container {
+    display: flex;
+    flex-direction: row;
+    gap: 300px;
+    align-items: flex-start; /* Changed from center to align tops */
+    margin-top: -480px;
+    margin-left: 1200px;
+}
+
+.vertical-container {
+    display: flex;
+    flex-direction: column;
+    gap: 300px; /* Adjust vertical spacing as needed */
+}
+
+.wordofp {
+    text-align: center;
+    color: rgb(200, 215, 215);
+    font-size: 20px;
+}
+
+.wordofs {
+    text-align: center;
+    color: rgb(200, 215, 215);
+    font-size: 20px;
+    /* Remove margin-left - flex handles positioning */
+}
+
+.wordofw {
+    text-align: center;
+    color: rgb(200, 215, 215);
+    font-size: 20px;
+    /* Remove margins - flex handles positioning */
+}
+.wordofp span:nth-child(1) {
+    text-align: center;
+    color: rgb(2, 255, 255);
+    font-size: 30px;
+}
+
+.wordofs span:nth-child(1) {
+    text-align: center;
+    color: rgb(2, 255, 255);
+    font-size: 30px;
+    /* Remove margin-left - flex handles positioning */
+}
+
+.wordofw span:nth-child(1) {
+    text-align: center;
+    color: rgb(2, 255, 255);
+    font-size: 30px;
+    /* Remove margins - flex handles positioning */
+}
+.number9 {
+    margin-top: 500px;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(180, 0, 0);
+    text-align: center;
+    font-size: 36px;           /* Bigger text */
+    font-family: 'Impact', 'Arial Black', sans-serif;  /* Cool bold font */
+    font-weight: bold;         /* Extra bold */
+    color: rgb(41, 5, 5);              /* White text for contrast */
+    line-height: 60px;        /* Centers text vertically in the 60px height */
+}
+.tekst0{
+    margin-top:-50px;
+    text-align: center;
+    color: rgb(2, 255, 255);
+    font-size: 50px;
+}
+.slika0 img {
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 960px;
+    height: 480px;  /* Keeps original 2:1 ratio */
+}
+.horizontal-container0 {
+    display: flex;
+    flex-direction: row;
+    gap: 300px;
+    align-items: flex-start; /* Changed from center to align tops */
+    margin-top: -480px;
+    margin-left: 1200px;
+}
+
+.vertical-container0 {
+    display: flex;
+    flex-direction: column;
+    gap: 300px; /* Adjust vertical spacing as needed */
+}
+
+.wordofp0 {
+    text-align: center;
+    color: rgb(200, 215, 215);
+    font-size: 20px;
+}
+
+.wordofs0 {
+    text-align: center;
+    color: rgb(200, 215, 215);
+    font-size: 20px;
+    /* Remove margin-left - flex handles positioning */
+}
+
+.wordofw0 {
+    text-align: center;
+    color: rgb(200, 215, 215);
+    font-size: 20px;
+    /* Remove margins - flex handles positioning */
+}
+.wordofp0 span:nth-child(1) {
+    text-align: center;
+    color: rgb(2, 255, 255);
+    font-size: 30px;
+}
+
+.wordofs0 span:nth-child(1) {
+    text-align: center;
+    color: rgb(2, 255, 255);
+    font-size: 30px;
+    /* Remove margin-left - flex handles positioning */
+}
+
+.wordofw0 span:nth-child(1) {
+    text-align: center;
+    color: rgb(2, 255, 255);
+    font-size: 30px;
+    /* Remove margins - flex handles positioning */
+}
+.number8 {
+    margin-top: 500px;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(180, 0, 0);
+    text-align: center;
+    font-size: 36px;           /* Bigger text */
+    font-family: 'Impact', 'Arial Black', sans-serif;  /* Cool bold font */
+    font-weight: bold;         /* Extra bold */
+    color: rgb(41, 5, 5);              /* White text for contrast */
+    line-height: 60px;        /* Centers text vertically in the 60px height */
+}
+.tekst1{
+    margin-top:-50px;
+    text-align: center;
+    color: rgb(2, 255, 255);
+    font-size: 50px;
+}
+.slika1 img {
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 960px;
+    height: 680px;  /* Keeps original 2:1 ratio */
+}
+.horizontal-container1 {
+    display: flex;
+    flex-direction: row;
+    gap: 300px;
+    align-items: flex-start; /* Changed from center to align tops */
+    margin-top: -480px;
+    margin-left: 1200px;
+}
+
+.vertical-container1 {
+    display: flex;
+    flex-direction: column;
+    gap: 300px; /* Adjust vertical spacing as needed */
+}
+
+.wordofp1 {
+    text-align: center;
+    color: rgb(200, 215, 215);
+    font-size: 20px;
+}
+
+.wordofs1 {
+    text-align: center;
+    color: rgb(200, 215, 215);
+    font-size: 20px;
+    /* Remove margin-left - flex handles positioning */
+}
+
+.wordofw1 {
+    text-align: center;
+    color: rgb(200, 215, 215);
+    font-size: 20px;
+    /* Remove margins - flex handles positioning */
+}
+.wordofp1 span:nth-child(1) {
+    text-align: center;
+    color: rgb(2, 255, 255);
+    font-size: 30px;
+}
+
+.wordofs1 span:nth-child(1) {
+    text-align: center;
+    color: rgb(2, 255, 255);
+    font-size: 30px;
+    /* Remove margin-left - flex handles positioning */
+}
+
+.wordofw1 span:nth-child(1) {
+    text-align: center;
+    color: rgb(2, 255, 255);
+    font-size: 30px;
+    /* Remove margins - flex handles positioning */
+}
+.number7 {
+    margin-top: 500px;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(180, 0, 0);
+    text-align: center;
+    font-size: 36px;           /* Bigger text */
+    font-family: 'Impact', 'Arial Black', sans-serif;  /* Cool bold font */
+    font-weight: bold;         /* Extra bold */
+    color: rgb(41, 5, 5);              /* White text for contrast */
+    line-height: 60px;        /* Centers text vertically in the 60px height */
+}
+.tekst2{
+    margin-top:-50px;
+    text-align: center;
+    color: rgb(2, 255, 255);
+    font-size: 50px;
+}
+.slika2 img {
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 960px;
+    height: 680px;  /* Keeps original 2:1 ratio */
+}
+.horizontal-container2 {
+    display: flex;
+    flex-direction: row;
+    gap: 300px;
+    align-items: flex-start; /* Changed from center to align tops */
+    margin-top: -480px;
+    margin-left: 1200px;
+}
+
+.vertical-container2 {
+    display: flex;
+    flex-direction: column;
+    gap: 300px; /* Adjust vertical spacing as needed */
+}
+
+.wordofp2 {
+    text-align: center;
+    color: rgb(200, 215, 215);
+    font-size: 20px;
+}
+
+.wordofs2 {
+    text-align: center;
+    color: rgb(200, 215, 215);
+    font-size: 20px;
+    /* Remove margin-left - flex handles positioning */
+}
+
+.wordofw2 {
+    text-align: center;
+    color: rgb(200, 215, 215);
+    font-size: 20px;
+    /* Remove margins - flex handles positioning */
+}
+.wordofp2 span:nth-child(1) {
+    text-align: center;
+    color: rgb(2, 255, 255);
+    font-size: 30px;
+}
+
+.wordofs2 span:nth-child(1) {
+    text-align: center;
+    color: rgb(2, 255, 255);
+    font-size: 30px;
+    /* Remove margin-left - flex handles positioning */
+}
+
+.wordofw2 span:nth-child(1) {
+    text-align: center;
+    color: rgb(2, 255, 255);
+    font-size: 30px;
+    /* Remove margins - flex handles positioning */
+}
+.number6 {
+    margin-top: 500px;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(180, 0, 0);
+    text-align: center;
+    font-size: 36px;           /* Bigger text */
+    font-family: 'Impact', 'Arial Black', sans-serif;  /* Cool bold font */
+    font-weight: bold;         /* Extra bold */
+    color: rgb(41, 5, 5);              /* White text for contrast */
+    line-height: 60px;        /* Centers text vertically in the 60px height */
+}
+.tekst3{
+    margin-top:-50px;
+    text-align: center;
+    color: rgb(2, 255, 255);
+    font-size: 50px;
+}
+.slika3 img {
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 960px;
+    height: 680px;  /* Keeps original 2:1 ratio */
+}
+.horizontal-container3 {
+    display: flex;
+    flex-direction: row;
+    gap: 300px;
+    align-items: flex-start; /* Changed from center to align tops */
+    margin-top: -480px;
+    margin-left: 1200px;
+}
+
+.vertical-container3 {
+    display: flex;
+    flex-direction: column;
+    gap: 300px; /* Adjust vertical spacing as needed */
+}
+
+.wordofp3 {
+    text-align: center;
+    color: rgb(200, 215, 215);
+    font-size: 20px;
+}
+
+.wordofs3 {
+    text-align: center;
+    color: rgb(200, 215, 215);
+    font-size: 20px;
+    /* Remove margin-left - flex handles positioning */
+}
+
+.wordofw3 {
+    text-align: center;
+    color: rgb(200, 215, 215);
+    font-size: 20px;
+    /* Remove margins - flex handles positioning */
+}
+.wordofp3 span:nth-child(1) {
+    text-align: center;
+    color: rgb(2, 255, 255);
+    font-size: 30px;
+}
+
+.wordofs3 span:nth-child(1) {
+    text-align: center;
+    color: rgb(2, 255, 255);
+    font-size: 30px;
+    /* Remove margin-left - flex handles positioning */
+}
+
+.wordofw3 span:nth-child(1) {
+    text-align: center;
+    color: rgb(2, 255, 255);
+    font-size: 30px;
+    /* Remove margins - flex handles positioning */
+}
+.number5 {
+    margin-top: 500px;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(180, 0, 0);
+    text-align: center;
+    font-size: 36px;           /* Bigger text */
+    font-family: 'Impact', 'Arial Black', sans-serif;  /* Cool bold font */
+    font-weight: bold;         /* Extra bold */
+    color: rgb(41, 5, 5);              /* White text for contrast */
+    line-height: 60px;        /* Centers text vertically in the 60px height */
+}
+.tekst4{
+    margin-top:-50px;
+    text-align: center;
+    color: rgb(2, 255, 255);
+    font-size: 50px;
+}
+.slika4 img {
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 860px;
+    height: 500px;  /* Keeps original 2:1 ratio */
+}
+.horizontal-container4 {
+    display: flex;
+    flex-direction: row;
+    gap: 300px;
+    align-items: flex-start; /* Changed from center to align tops */
+    margin-top: -480px;
+    margin-left: 1200px;
+}
+
+.vertical-container4 {
+    display: flex;
+    flex-direction: column;
+    gap: 300px; /* Adjust vertical spacing as needed */
+}
+
+.wordofp4 {
+    text-align: center;
+    color: rgb(200, 215, 215);
+    font-size: 20px;
+}
+
+.wordofs4 {
+    text-align: center;
+    color: rgb(200, 215, 215);
+    font-size: 20px;
+    /* Remove margin-left - flex handles positioning */
+}
+
+.wordofw4 {
+    text-align: center;
+    color: rgb(200, 215, 215);
+    font-size: 20px;
+    /* Remove margins - flex handles positioning */
+}
+.wordofp4 span:nth-child(1) {
+    text-align: center;
+    color: rgb(2, 255, 255);
+    font-size: 30px;
+}
+
+.wordofs4 span:nth-child(1) {
+    text-align: center;
+    color: rgb(2, 255, 255);
+    font-size: 30px;
+    /* Remove margin-left - flex handles positioning */
+}
+
+.wordofw4 span:nth-child(1) {
+    text-align: center;
+    color: rgb(2, 255, 255);
+    font-size: 30px;
+    /* Remove margins - flex handles positioning */
+}
+.number4 {
+    margin-top: 500px;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(180, 0, 0);
+    text-align: center;
+    font-size: 36px;           /* Bigger text */
+    font-family: 'Impact', 'Arial Black', sans-serif;  /* Cool bold font */
+    font-weight: bold;         /* Extra bold */
+    color: rgb(41, 5, 5);              /* White text for contrast */
+    line-height: 60px;        /* Centers text vertically in the 60px height */
+}
+.tekst5{
+    margin-top:-50px;
+    text-align: center;
+    color: rgb(2, 255, 255);
+    font-size: 50px;
+}
+.slika5 img {
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 860px;
+    height: 500px;  /* Keeps original 2:1 ratio */
+}
+.horizontal-container5 {
+    display: flex;
+    flex-direction: row;
+    gap: 300px;
+    align-items: flex-start; /* Changed from center to align tops */
+    margin-top: -480px;
+    margin-left: 1200px;
+}
+
+.vertical-container5 {
+    display: flex;
+    flex-direction: column;
+    gap: 300px; /* Adjust vertical spacing as needed */
+}
+
+.wordofp5 {
+    text-align: center;
+    color: rgb(200, 215, 215);
+    font-size: 20px;
+}
+
+.wordofs5 {
+    text-align: center;
+    color: rgb(200, 215, 215);
+    font-size: 20px;
+    /* Remove margin-left - flex handles positioning */
+}
+
+.wordofw5 {
+    text-align: center;
+    color: rgb(200, 215, 215);
+    font-size: 20px;
+    /* Remove margins - flex handles positioning */
+}
+.wordofp5 span:nth-child(1) {
+    text-align: center;
+    color: rgb(2, 255, 255);
+    font-size: 30px;
+}
+
+.wordofs5 span:nth-child(1) {
+    text-align: center;
+    color: rgb(2, 255, 255);
+    font-size: 30px;
+    /* Remove margin-left - flex handles positioning */
+}
+
+.wordofw5 span:nth-child(1) {
+    text-align: center;
+    color: rgb(2, 255, 255);
+    font-size: 30px;
+    /* Remove margins - flex handles positioning */
+}
+.number3 {
+    margin-top: 500px;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(180, 0, 0);
+    text-align: center;
+    font-size: 36px;           /* Bigger text */
+    font-family: 'Impact', 'Arial Black', sans-serif;  /* Cool bold font */
+    font-weight: bold;         /* Extra bold */
+    color: rgb(41, 5, 5);              /* White text for contrast */
+    line-height: 60px;        /* Centers text vertically in the 60px height */
+}
+.tekst6{
+    margin-top:-50px;
+    text-align: center;
+    color: rgb(2, 255, 255);
+    font-size: 50px;
+}
+.slika6 img {
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 860px;
+    height: 860px;  /* Keeps original 2:1 ratio */
+}
+.horizontal-container6 {
+    display: flex;
+    flex-direction: row;
+    gap: 300px;
+    align-items: flex-start; /* Changed from center to align tops */
+    margin-top: -480px;
+    margin-left: 1200px;
+}
+
+.vertical-container6 {
+    display: flex;
+    flex-direction: column;
+    gap: 300px; /* Adjust vertical spacing as needed */
+}
+
+.wordofp6 {
+    text-align: center;
+    color: rgb(200, 215, 215);
+    font-size: 20px;
+}
+
+.wordofs6 {
+    text-align: center;
+    color: rgb(200, 215, 215);
+    font-size: 20px;
+    /* Remove margin-left - flex handles positioning */
+}
+
+.wordofw6 {
+    text-align: center;
+    color: rgb(200, 215, 215);
+    font-size: 20px;
+    /* Remove margins - flex handles positioning */
+}
+.wordofp6 span:nth-child(1) {
+    text-align: center;
+    color: rgb(2, 255, 255);
+    font-size: 30px;
+}
+
+.wordofs6 span:nth-child(1) {
+    text-align: center;
+    color: rgb(2, 255, 255);
+    font-size: 30px;
+    /* Remove margin-left - flex handles positioning */
+}
+
+.wordofw6 span:nth-child(1) {
+    text-align: center;
+    color: rgb(2, 255, 255);
+    font-size: 30px;
+    /* Remove margins - flex handles positioning */
+}
+.number2 {
+    margin-top: 500px;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(180, 0, 0);
+    text-align: center;
+    font-size: 36px;           /* Bigger text */
+    font-family: 'Impact', 'Arial Black', sans-serif;  /* Cool bold font */
+    font-weight: bold;         /* Extra bold */
+    color: rgb(41, 5, 5);              /* White text for contrast */
+    line-height: 60px;        /* Centers text vertically in the 60px height */
+}
+.tekst7{
+    margin-top:-50px;
+    text-align: center;
+    color: rgb(2, 255, 255);
+    font-size: 50px;
+}
+.slika7 img {
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 860px;
+    height: 560px;  /* Keeps original 2:1 ratio */
+}
+.horizontal-container7 {
+    display: flex;
+    flex-direction: row;
+    gap: 300px;
+    align-items: flex-start; /* Changed from center to align tops */
+    margin-top: -480px;
+    margin-left: 1200px;
+}
+
+.vertical-container7 {
+    display: flex;
+    flex-direction: column;
+    gap: 300px; /* Adjust vertical spacing as needed */
+}
+
+.wordofp7 {
+    text-align: center;
+    color: rgb(200, 215, 215);
+    font-size: 20px;
+}
+
+.wordofs7 {
+    text-align: center;
+    color: rgb(200, 215, 215);
+    font-size: 20px;
+    /* Remove margin-left - flex handles positioning */
+}
+
+.wordofw7  {
+    text-align: center;
+    color: rgb(200, 215, 215);
+    font-size: 20px;
+    /* Remove margins - flex handles positioning */
+}
+.wordofp7 span:nth-child(1) {
+    text-align: center;
+    color: rgb(2, 255, 255);
+    font-size: 30px;
+}
+
+.wordofs7 span:nth-child(1) {
+    text-align: center;
+    color: rgb(2, 255, 255);
+    font-size: 30px;
+    /* Remove margin-left - flex handles positioning */
+}
+
+.wordofw7 span:nth-child(1) {
+    text-align: center;
+    color: rgb(2, 255, 255);
+    font-size: 30px;
+    /* Remove margins - flex handles positioning */
+}
+.number1 {
+    margin-top: 500px;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(180, 0, 0);
+    text-align: center;
+    font-size: 36px;           /* Bigger text */
+    font-family: 'Impact', 'Arial Black', sans-serif;  /* Cool bold font */
+    font-weight: bold;         /* Extra bold */
+    color: rgb(41, 5, 5);              /* White text for contrast */
+    line-height: 60px;        /* Centers text vertically in the 60px height */
+}
+.tekst8{
+    margin-top:-50px;
+    text-align: center;
+    color: rgb(2, 255, 255);
+    font-size: 50px;
+}
+.slika8 img {
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 860px;
+    height: 560px;  /* Keeps original 2:1 ratio */
+}
+.horizontal-container8 {
+    display: flex;
+    flex-direction: row;
+    gap: 300px;
+    align-items: flex-start; /* Changed from center to align tops */
+    margin-top: -480px;
+    margin-left: 1200px;
+}
+
+.vertical-container8 {
+    display: flex;
+    flex-direction: column;
+    gap: 300px; /* Adjust vertical spacing as needed */
+}
+
+.wordofp8 {
+    text-align: center;
+    color: rgb(200, 215, 215);
+    font-size: 20px;
+}
+
+.wordofs8 {
+    text-align: center;
+    color: rgb(200, 215, 215);
+    font-size: 20px;
+    /* Remove margin-left - flex handles positioning */
+}
+
+.wordofw8  {
+    text-align: center;
+    color: rgb(200, 215, 215);
+    font-size: 20px;
+    /* Remove margins - flex handles positioning */
+}
+.wordofp8 span:nth-child(1) {
+    text-align: center;
+    color: rgb(2, 255, 255);
+    font-size: 30px;
+}
+
+.wordofs8 span:nth-child(1) {
+    text-align: center;
+    color: rgb(2, 255, 255);
+    font-size: 30px;
+    /* Remove margin-left - flex handles positioning */
+}
+
+.wordofw8 span:nth-child(1) {
+    text-align: center;
+    color: rgb(2, 255, 255);
+    font-size: 30px;
+    /* Remove margins - flex handles positioning */
+}
+footer {
+    margin-top: 700px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
