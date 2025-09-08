@@ -1,6 +1,22 @@
 h1 {
     text-align: center; /* Center the whole h1 element */
 }
+/* AD POSITIONING - Simple absolute positioning */
+.ad-banner-top {
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+}
+
+.ad-banner-bottom {
+    position: absolute;
+    top: 15200px; /* Near the end of content */
+    left: 50px;
+    transform: translateX(-50%);
+    z-index: 20;
+}
 
 .first-text {
         color: #DC143C;
@@ -837,5 +853,9 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
+
+
+
 
 
