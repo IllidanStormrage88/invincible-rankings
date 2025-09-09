@@ -19,7 +19,7 @@ function animateBlueStripe() {
     
     setInterval(() => {
         if (o == false ) {
-            x = x + 1;
+            x = x + 0.25; // Changed from 1 to 0.25
             setBlueTheme(blueStripe,x);
         }
         if (x == 50) {
@@ -29,7 +29,7 @@ function animateBlueStripe() {
             o = false;
         }
         if (o == true ) {
-            x = x - 1;
+            x = x - 0.25; // Changed from 1 to 0.25
             setBlueTheme(blueStripe,x);
         }
     }, 1);
@@ -48,4 +48,5 @@ function main() {
 
 // Call main when DOM is loaded
 document.addEventListener('DOMContentLoaded', main);
+
 
