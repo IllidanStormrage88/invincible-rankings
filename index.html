@@ -10,6 +10,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+    <script>
+    if (window.innerWidth < 768) {  // Adjust width threshold for phones
+        document.body.innerHTML = `
+            <div style="display:flex;justify-content:center;align-items:center;height:100vh;background:#000;color:#fff;text-align:center;">
+                <h1>This site is only for desktop users.<br>Please open it on a PC.</h1>
+            </div>
+        `;
+    }
+</script>
 <div class="ad-banner-top">
     <script type="text/javascript">
     atOptions = {
@@ -426,4 +435,5 @@
     <script src="ShortCircuit.js"></script>
 </body>
 </html>
+
 
