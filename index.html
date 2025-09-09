@@ -8,26 +8,6 @@
 </head>
 <body>
     <!-- REMOVE THIS MOBILE BLOCKING SCRIPT IF YOU WANT TO TEST MOBILE SCALING -->
-    <script>
-    (function() {
-        const ua = navigator.userAgent || navigator.vendor || window.opera;
-        const isMobile = /android|iphone|ipad|ipod|windows phone/i.test(ua);
-
-        if (isMobile) {
-            // Completely stop the page and show a message
-            document.documentElement.innerHTML = `
-            <head>
-                <title>Desktop Only</title>
-                <meta charset="UTF-8">
-            </head>
-            <body style="margin:0; display:flex; justify-content:center; align-items:center; height:100vh; background:#000; color:#fff; text-align:center;">
-                <h1>This site is only for desktop users.<br>Please open it on a PC.</h1>
-            </body>
-            `;
-            document.close();
-        }
-    })();
-    </script>
 
     <!-- WRAP EVERYTHING IN THE SCALED CONTAINER -->
     <div class="scaled-container">
@@ -452,6 +432,7 @@
     <script src="ShortCircuit.js"></script>
 </body>
 </html>
+
 
 
 
