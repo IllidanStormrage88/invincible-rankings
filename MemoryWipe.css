@@ -1,32 +1,11 @@
-/* Wrapper that enforces 16:9 ratio */
-.scale-wrapper {
-  position: relative;
-  width: 100vw;
-  height: 56.25vw; /* 16:9 aspect ratio → 9/16 = 0.5625 */
-  max-height: 100vh;
-  max-width: 177.78vh; /* 16/9 * 100 */
-  margin: auto;
-  overflow: hidden;
-}
-
-/* Inner content gets scaled */
-.scale-content {
-  position: absolute;
-  width: 2560px;  /* your design width */
-  height: 1440px; /* your design height */
-  top: 0;
-  left: 0;
-  transform-origin: top left;
-  transform: scale(var(--scale));
-}
-
 h1 {
-    text-align: center; /* Center the whole h1 element */
+    text-align: center;
+    margin-top: calc(-10px * var(--scale)); /* Center the whole h1 element */
 }
 /* AD POSITIONING - Simple absolute positioning */
 .ad-banner-top {
     position: absolute;
-    top: 24.3vh; /* 350px / 1440px * 100 */
+    top: calc(350px * var(--scale));
     left: 50%;
     transform: translateX(-50%);
     z-index: 20;
@@ -34,8 +13,8 @@ h1 {
 
 .ad-banner-bottom {
     position: absolute;
-    top: 1055.6vh; /* 15200px / 1440px * 100 */
-    left: 1.95vw; /* 50px / 2560px * 100 */
+    top: calc(15200px * var(--scale)); /* Near the end of content */
+    left: calc(50px * var(--scale));
     transform: translateX(-50%);
     z-index: 20;
 }
@@ -48,7 +27,7 @@ h1 {
 .first-text1 {
     font-family: Arial, sans-serif;
     color: yellow;
-    font-size: 4.17vh; /* 60px / 1440px * 100 */
+    font-size: calc(60px * var(--scale));
 }
 
 .first-text2 {
@@ -58,7 +37,7 @@ h1 {
 
 .content {
     position: absolute;
-    top: 13.9vh; /* 200px / 1440px * 100 */
+    top: calc(200px * var(--scale));        /* Move down from top (adjust as needed) */
     left: 50%;         /* Move to horizontal center */
     transform: translateX(-50%);
     line-height: 0.5;
@@ -67,21 +46,21 @@ h1 {
 }
 .blue-stripe {
     position: absolute;
-    top: 0px;
+    top: calc(0px * var(--scale));
     left: 50%;
     transform: translateX(-50%);
-    width: 100vw; /* 2560px converted to full viewport width */
-    height: 6.94vh; /* 100px / 1440px * 100 */
+    width: calc(2560px * var(--scale));
+    height: calc(100px * var(--scale));
     background: linear-gradient(to right, black 0%, #59C3F2 25%, #0066CC 50%, #59C3F2 75%, black 100%);
     z-index: -2;
 }
 .transition {
     position: absolute;
-    top: 6.6vh; /* 95px / 1440px * 100 */
+    top: calc(95px * var(--scale));
     left: 50%;
     transform: translateX(-50%);
-    width: 100vw; /* 2560px converted to full viewport width */
-    height: 0.69vh; /* 10px / 1440px * 100 */
+    width: calc(2560px * var(--scale));
+    height: calc(10px * var(--scale));
     background: 
         linear-gradient(to bottom, #59C3F2 0%, black 100%),
         linear-gradient(to right, black 0%, #59C3F2 25%, #0066CC 50%, #59C3F2 75%, black 100%);
@@ -99,782 +78,783 @@ h1 {
     z-index: -3;
 }
 .number10 {
-    margin-top: 34.7vh; /* 500px / 1440px * 100 */
+    margin-top: calc(500px * var(--scale));
     width: 100%;
-    height: 4.17vh; /* 60px / 1440px * 100 */
+    height: calc(60px * var(--scale));
     background-color: rgb(180, 0, 0);
     text-align: center;
-    font-size: 2.5vh; /* 36px / 1440px * 100 */
+    font-size: calc(36px * var(--scale));           /* Bigger text */
     font-family: 'Impact', 'Arial Black', sans-serif;  /* Cool bold font */
     font-weight: bold;         /* Extra bold */
     color: rgb(41, 5, 5);              /* White text for contrast */
-    line-height: 4.17vh; /* 60px / 1440px * 100 - Centers text vertically in the 60px height */
+    line-height: calc(60px * var(--scale));        /* Centers text vertically in the 60px height */
 }
 .tekst{
-    margin-top: -3.47vh; /* -50px / 1440px * 100 */
+    margin-top: calc(-10px * var(--scale));
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 3.47vh; /* 50px / 1440px * 100 */
+    font-size: calc(50px * var(--scale));
 }
 .slika img {
-    margin-top: 0px;
-    margin-left: 0px;    /* Moves right, other elements respect this space */
-    width: 37.5vw; /* 960px / 2560px * 100 */
-    height: 33.3vh; /* 480px / 1440px * 100 */
+    margin-top: calc(0px * var(--scale));
+    margin-left: calc(0px * var(--scale));    /* Moves right, other elements respect this space */
+    width: calc(960px * var(--scale));
+    height: calc(480px * var(--scale));
 }
 .horizontal-container {
     display: flex;
     flex-direction: row;
-    gap: 11.72vw; /* 300px / 2560px * 100 */
+    gap: calc(300px * var(--scale));
     align-items: flex-start; /* Changed from center to align tops */
-    margin-top: -33.3vh; /* -480px / 1440px * 100 */
-    margin-left: 46.88vw; /* 1200px / 2560px * 100 */
+    margin-top: calc(-480px * var(--scale));
+    margin-left: calc(1200px * var(--scale));
 }
 
 .vertical-container {
     display: flex;
     flex-direction: column;
-    gap: 20.83vh; /* 300px / 1440px * 100 - Adjust vertical spacing as needed */
+    gap: calc(300px * var(--scale)); /* Adjust vertical spacing as needed */
 }
 
 .wordofp {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 1.39vh; /* 20px / 1440px * 100 */
+    font-size: calc(20px * var(--scale));
 }
 
 .wordofs {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 1.39vh; /* 20px / 1440px * 100 */
+    font-size: calc(20px * var(--scale));
     /* Remove margin-left - flex handles positioning */
 }
 
 .wordofw {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 1.39vh; /* 20px / 1440px * 100 */
+    font-size: calc(20px * var(--scale));
     /* Remove margins - flex handles positioning */
 }
 .wordofp span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 2.08vh; /* 30px / 1440px * 100 */
+    font-size: calc(30px * var(--scale));
 }
 
 .wordofs span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 2.08vh; /* 30px / 1440px * 100 */
+    font-size: calc(30px * var(--scale));
     /* Remove margin-left - flex handles positioning */
 }
 
 .wordofw span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 2.08vh; /* 30px / 1440px * 100 */
+    font-size: calc(30px * var(--scale));
     /* Remove margins - flex handles positioning */
 }
 .number9 {
-    margin-top: 34.7vh; /* 500px / 1440px * 100 */
+    margin-top: calc(500px * var(--scale));
     width: 100%;
-    height: 4.17vh; /* 60px / 1440px * 100 */
+    height: calc(60px * var(--scale));
     background-color: rgb(180, 0, 0);
     text-align: center;
-    font-size: 2.5vh; /* 36px / 1440px * 100 */
+    font-size: calc(36px * var(--scale));           /* Bigger text */
     font-family: 'Impact', 'Arial Black', sans-serif;  /* Cool bold font */
     font-weight: bold;         /* Extra bold */
     color: rgb(41, 5, 5);              /* White text for contrast */
-    line-height: 4.17vh; /* 60px / 1440px * 100 - Centers text vertically in the 60px height */
+    line-height: calc(60px * var(--scale));        /* Centers text vertically in the 60px height */
 }
 .tekst0{
-    margin-top: -3.47vh; /* -50px / 1440px * 100 */
+    margin-top: calc(-10px * var(--scale));
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 3.47vh; /* 50px / 1440px * 100 */
+    font-size: calc(50px * var(--scale));
 }
 .slika0 img {
-    margin-top: 0px;
-    margin-left: 0px;
-    width: 37.5vw; /* 960px / 2560px * 100 */
-    height: 33.3vh; /* 480px / 1440px * 100 - Keeps original 2:1 ratio */
+    margin-top: calc(0px * var(--scale));
+    margin-left: calc(0px * var(--scale));
+    width: calc(960px * var(--scale));
+    height: calc(480px * var(--scale));  /* Keeps original 2:1 ratio */
 }
 .horizontal-container0 {
     display: flex;
     flex-direction: row;
-    gap: 11.72vw; /* 300px / 2560px * 100 */
+    gap: calc(300px * var(--scale));
     align-items: flex-start; /* Changed from center to align tops */
-    margin-top: -33.3vh; /* -480px / 1440px * 100 */
-    margin-left: 46.88vw; /* 1200px / 2560px * 100 */
+    margin-top: calc(-480px * var(--scale));
+    margin-left: calc(1200px * var(--scale));
 }
 
 .vertical-container0 {
     display: flex;
     flex-direction: column;
-    gap: 20.83vh; /* 300px / 1440px * 100 - Adjust vertical spacing as needed */
+    gap: calc(300px * var(--scale)); /* Adjust vertical spacing as needed */
 }
 
 .wordofp0 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 1.39vh; /* 20px / 1440px * 100 */
+    font-size: calc(20px * var(--scale));
 }
 
 .wordofs0 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 1.39vh; /* 20px / 1440px * 100 */
+    font-size: calc(20px * var(--scale));
     /* Remove margin-left - flex handles positioning */
 }
 
 .wordofw0 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 1.39vh; /* 20px / 1440px * 100 */
+    font-size: calc(20px * var(--scale));
     /* Remove margins - flex handles positioning */
 }
 .wordofp0 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 2.08vh; /* 30px / 1440px * 100 */
+    font-size: calc(30px * var(--scale));
 }
 
 .wordofs0 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 2.08vh; /* 30px / 1440px * 100 */
+    font-size: calc(30px * var(--scale));
     /* Remove margin-left - flex handles positioning */
 }
 
 .wordofw0 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 2.08vh; /* 30px / 1440px * 100 */
+    font-size: calc(30px * var(--scale));
     /* Remove margins - flex handles positioning */
 }
 .number8 {
-    margin-top: 34.7vh; /* 500px / 1440px * 100 */
+    margin-top: calc(500px * var(--scale));
     width: 100%;
-    height: 4.17vh; /* 60px / 1440px * 100 */
+    height: calc(60px * var(--scale));
     background-color: rgb(180, 0, 0);
     text-align: center;
-    font-size: 2.5vh; /* 36px / 1440px * 100 */
+    font-size: calc(36px * var(--scale));           /* Bigger text */
     font-family: 'Impact', 'Arial Black', sans-serif;  /* Cool bold font */
     font-weight: bold;         /* Extra bold */
     color: rgb(41, 5, 5);              /* White text for contrast */
-    line-height: 4.17vh; /* 60px / 1440px * 100 - Centers text vertically in the 60px height */
+    line-height: calc(60px * var(--scale));        /* Centers text vertically in the 60px height */
 }
 .tekst1{
-    margin-top: -3.47vh; /* -50px / 1440px * 100 */
+    margin-top: calc(-10px * var(--scale));
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 3.47vh; /* 50px / 1440px * 100 */
+    font-size: calc(50px * var(--scale));
 }
 .slika1 img {
-    margin-top: 0px;
-    margin-left: 0px;
-    width: 37.5vw; /* 960px / 2560px * 100 */
-    height: 47.22vh; /* 680px / 1440px * 100 - Keeps original 2:1 ratio */
+    margin-top: calc(0px * var(--scale));
+    margin-left: calc(0px * var(--scale));
+    width: calc(960px * var(--scale));
+    height: calc(680px * var(--scale));  /* Keeps original 2:1 ratio */
 }
 .horizontal-container1 {
     display: flex;
     flex-direction: row;
-    gap: 11.72vw; /* 300px / 2560px * 100 */
+    gap: calc(300px * var(--scale));
     align-items: flex-start; /* Changed from center to align tops */
-    margin-top: -33.3vh; /* -480px / 1440px * 100 */
-    margin-left: 46.88vw; /* 1200px / 2560px * 100 */
+    margin-top: calc(-480px * var(--scale));
+    margin-left: calc(1200px * var(--scale));
 }
 
 .vertical-container1 {
     display: flex;
     flex-direction: column;
-    gap: 20.83vh; /* 300px / 1440px * 100 - Adjust vertical spacing as needed */
+    gap: calc(300px * var(--scale)); /* Adjust vertical spacing as needed */
 }
 
 .wordofp1 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 1.39vh; /* 20px / 1440px * 100 */
+    font-size: calc(20px * var(--scale));
 }
 
 .wordofs1 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 1.39vh; /* 20px / 1440px * 100 */
+    font-size: calc(20px * var(--scale));
     /* Remove margin-left - flex handles positioning */
 }
 
 .wordofw1 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 1.39vh; /* 20px / 1440px * 100 */
+    font-size: calc(20px * var(--scale));
     /* Remove margins - flex handles positioning */
 }
 .wordofp1 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 2.08vh; /* 30px / 1440px * 100 */
+    font-size: calc(30px * var(--scale));
 }
 
 .wordofs1 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 2.08vh; /* 30px / 1440px * 100 */
+    font-size: calc(30px * var(--scale));
     /* Remove margin-left - flex handles positioning */
 }
 
 .wordofw1 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 2.08vh; /* 30px / 1440px * 100 */
+    font-size: calc(30px * var(--scale));
     /* Remove margins - flex handles positioning */
 }
 .number7 {
-    margin-top: 34.7vh; /* 500px / 1440px * 100 */
+    margin-top: calc(500px * var(--scale));
     width: 100%;
-    height: 4.17vh; /* 60px / 1440px * 100 */
+    height: calc(60px * var(--scale));
     background-color: rgb(180, 0, 0);
     text-align: center;
-    font-size: 2.5vh; /* 36px / 1440px * 100 */
+    font-size: calc(36px * var(--scale));           /* Bigger text */
     font-family: 'Impact', 'Arial Black', sans-serif;  /* Cool bold font */
     font-weight: bold;         /* Extra bold */
     color: rgb(41, 5, 5);              /* White text for contrast */
-    line-height: 4.17vh; /* 60px / 1440px * 100 - Centers text vertically in the 60px height */
+    line-height: calc(60px * var(--scale));        /* Centers text vertically in the 60px height */
 }
 .tekst2{
-    margin-top: -3.47vh; /* -50px / 1440px * 100 */
+    margin-top: calc(-10px * var(--scale));
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 3.47vh; /* 50px / 1440px * 100 */
+    font-size: calc(50px * var(--scale));
 }
 .slika2 img {
-    margin-top: 0px;
-    margin-left: 0px;
-    width: 37.5vw; /* 960px / 2560px * 100 */
-    height: 47.22vh; /* 680px / 1440px * 100 - Keeps original 2:1 ratio */
+    margin-top: calc(0px * var(--scale));
+    margin-left: calc(0px * var(--scale));
+    width: calc(960px * var(--scale));
+    height: calc(680px * var(--scale));  /* Keeps original 2:1 ratio */
 }
 .horizontal-container2 {
     display: flex;
     flex-direction: row;
-    gap: 11.72vw; /* 300px / 2560px * 100 */
+    gap: calc(300px * var(--scale));
     align-items: flex-start; /* Changed from center to align tops */
-    margin-top: -33.3vh; /* -480px / 1440px * 100 */
-    margin-left: 46.88vw; /* 1200px / 2560px * 100 */
+    margin-top: calc(-480px * var(--scale));
+    margin-left: calc(1200px * var(--scale));
 }
 
 .vertical-container2 {
     display: flex;
     flex-direction: column;
-    gap: 20.83vh; /* 300px / 1440px * 100 - Adjust vertical spacing as needed */
+    gap: calc(300px * var(--scale)); /* Adjust vertical spacing as needed */
 }
 
 .wordofp2 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 1.39vh; /* 20px / 1440px * 100 */
+    font-size: calc(20px * var(--scale));
 }
 
 .wordofs2 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 1.39vh; /* 20px / 1440px * 100 */
+    font-size: calc(20px * var(--scale));
     /* Remove margin-left - flex handles positioning */
 }
 
 .wordofw2 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 1.39vh; /* 20px / 1440px * 100 */
+    font-size: calc(20px * var(--scale));
     /* Remove margins - flex handles positioning */
 }
 .wordofp2 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 2.08vh; /* 30px / 1440px * 100 */
+    font-size: calc(30px * var(--scale));
 }
 
 .wordofs2 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 2.08vh; /* 30px / 1440px * 100 */
+    font-size: calc(30px * var(--scale));
     /* Remove margin-left - flex handles positioning */
 }
 
 .wordofw2 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 2.08vh; /* 30px / 1440px * 100 */
+    font-size: calc(30px * var(--scale));
     /* Remove margins - flex handles positioning */
 }
 .number6 {
-    margin-top: 34.7vh; /* 500px / 1440px * 100 */
+    margin-top: calc(500px * var(--scale));
     width: 100%;
-    height: 4.17vh; /* 60px / 1440px * 100 */
+    height: calc(60px * var(--scale));
     background-color: rgb(180, 0, 0);
     text-align: center;
-    font-size: 2.5vh; /* 36px / 1440px * 100 */
+    font-size: calc(36px * var(--scale));           /* Bigger text */
     font-family: 'Impact', 'Arial Black', sans-serif;  /* Cool bold font */
     font-weight: bold;         /* Extra bold */
     color: rgb(41, 5, 5);              /* White text for contrast */
-    line-height: 4.17vh; /* 60px / 1440px * 100 - Centers text vertically in the 60px height */
+    line-height: calc(60px * var(--scale));        /* Centers text vertically in the 60px height */
 }
 .tekst3{
-    margin-top: -3.47vh; /* -50px / 1440px * 100 */
+    margin-top: calc(-10px * var(--scale));
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 3.47vh; /* 50px / 1440px * 100 */
+    font-size: calc(50px * var(--scale));
 }
 .slika3 img {
-    margin-top: 0px;
-    margin-left: 0px;
-    width: 37.5vw; /* 960px / 2560px * 100 */
-    height: 47.22vh; /* 680px / 1440px * 100 - Keeps original 2:1 ratio */
+    margin-top: calc(0px * var(--scale));
+    margin-left: calc(0px * var(--scale));
+    width: calc(960px * var(--scale));
+    height: calc(680px * var(--scale));  /* Keeps original 2:1 ratio */
 }
 .horizontal-container3 {
     display: flex;
     flex-direction: row;
-    gap: 11.72vw; /* 300px / 2560px * 100 */
+    gap: calc(300px * var(--scale));
     align-items: flex-start; /* Changed from center to align tops */
-    margin-top: -33.3vh; /* -480px / 1440px * 100 */
-    margin-left: 46.88vw; /* 1200px / 2560px * 100 */
+    margin-top: calc(-480px * var(--scale));
+    margin-left: calc(1200px * var(--scale));
 }
 
 .vertical-container3 {
     display: flex;
     flex-direction: column;
-    gap: 20.83vh; /* 300px / 1440px * 100 - Adjust vertical spacing as needed */
+    gap: calc(300px * var(--scale)); /* Adjust vertical spacing as needed */
 }
 
 .wordofp3 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 1.39vh; /* 20px / 1440px * 100 */
+    font-size: calc(20px * var(--scale));
 }
 
 .wordofs3 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 1.39vh; /* 20px / 1440px * 100 */
+    font-size: calc(20px * var(--scale));
     /* Remove margin-left - flex handles positioning */
 }
 
 .wordofw3 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 1.39vh; /* 20px / 1440px * 100 */
+    font-size: calc(20px * var(--scale));
     /* Remove margins - flex handles positioning */
 }
 .wordofp3 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 2.08vh; /* 30px / 1440px * 100 */
+    font-size: calc(30px * var(--scale));
 }
 
 .wordofs3 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 2.08vh; /* 30px / 1440px * 100 */
+    font-size: calc(30px * var(--scale));
     /* Remove margin-left - flex handles positioning */
 }
 
 .wordofw3 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 2.08vh; /* 30px / 1440px * 100 */
+    font-size: calc(30px * var(--scale));
     /* Remove margins - flex handles positioning */
 }
 .number5 {
-    margin-top: 34.7vh; /* 500px / 1440px * 100 */
+    margin-top: calc(500px * var(--scale));
     width: 100%;
-    height: 4.17vh; /* 60px / 1440px * 100 */
+    height: calc(60px * var(--scale));
     background-color: rgb(180, 0, 0);
     text-align: center;
-    font-size: 2.5vh; /* 36px / 1440px * 100 */
+    font-size: calc(36px * var(--scale));           /* Bigger text */
     font-family: 'Impact', 'Arial Black', sans-serif;  /* Cool bold font */
     font-weight: bold;         /* Extra bold */
     color: rgb(41, 5, 5);              /* White text for contrast */
-    line-height: 4.17vh; /* 60px / 1440px * 100 - Centers text vertically in the 60px height */
+    line-height: calc(60px * var(--scale));        /* Centers text vertically in the 60px height */
 }
 .tekst4{
-    margin-top: -3.47vh; /* -50px / 1440px * 100 */
+    margin-top: calc(-10px * var(--scale));
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 3.47vh; /* 50px / 1440px * 100 */
+    font-size: calc(50px * var(--scale));
 }
 .slika4 img {
-    margin-top: 0px;
-    margin-left: 0px;
-    width: 33.59vw; /* 860px / 2560px * 100 */
-    height: 34.72vh; /* 500px / 1440px * 100 - Keeps original 2:1 ratio */
+    margin-top: calc(0px * var(--scale));
+    margin-left: calc(0px * var(--scale));
+    width: calc(860px * var(--scale));
+    height: calc(500px * var(--scale));  /* Keeps original 2:1 ratio */
 }
 .horizontal-container4 {
     display: flex;
     flex-direction: row;
-    gap: 11.72vw; /* 300px / 2560px * 100 */
+    gap: calc(300px * var(--scale));
     align-items: flex-start; /* Changed from center to align tops */
-    margin-top: -33.3vh; /* -480px / 1440px * 100 */
-    margin-left: 46.88vw; /* 1200px / 2560px * 100 */
+    margin-top: calc(-480px * var(--scale));
+    margin-left: calc(1200px * var(--scale));
 }
 
 .vertical-container4 {
     display: flex;
     flex-direction: column;
-    gap: 20.83vh; /* 300px / 1440px * 100 - Adjust vertical spacing as needed */
+    gap: calc(300px * var(--scale)); /* Adjust vertical spacing as needed */
 }
 
 .wordofp4 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 1.39vh; /* 20px / 1440px * 100 */
+    font-size: calc(20px * var(--scale));
 }
 
 .wordofs4 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 1.39vh; /* 20px / 1440px * 100 */
+    font-size: calc(20px * var(--scale));
     /* Remove margin-left - flex handles positioning */
 }
 
 .wordofw4 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 1.39vh; /* 20px / 1440px * 100 */
+    font-size: calc(20px * var(--scale));
     /* Remove margins - flex handles positioning */
 }
 .wordofp4 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 2.08vh; /* 30px / 1440px * 100 */
+    font-size: calc(30px * var(--scale));
 }
 
 .wordofs4 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 2.08vh; /* 30px / 1440px * 100 */
+    font-size: calc(30px * var(--scale));
     /* Remove margin-left - flex handles positioning */
 }
 
 .wordofw4 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 2.08vh; /* 30px / 1440px * 100 */
+    font-size: calc(30px * var(--scale));
     /* Remove margins - flex handles positioning */
 }
 .number4 {
-    margin-top: 34.7vh; /* 500px / 1440px * 100 */
+    margin-top: calc(500px * var(--scale));
     width: 100%;
-    height: 4.17vh; /* 60px / 1440px * 100 */
+    height: calc(60px * var(--scale));
     background-color: rgb(180, 0, 0);
     text-align: center;
-    font-size: 2.5vh; /* 36px / 1440px * 100 */
+    font-size: calc(36px * var(--scale));           /* Bigger text */
     font-family: 'Impact', 'Arial Black', sans-serif;  /* Cool bold font */
     font-weight: bold;         /* Extra bold */
     color: rgb(41, 5, 5);              /* White text for contrast */
-    line-height: 4.17vh; /* 60px / 1440px * 100 - Centers text vertically in the 60px height */
+    line-height: calc(60px * var(--scale));        /* Centers text vertically in the 60px height */
 }
 .tekst5{
-    margin-top: -3.47vh; /* -50px / 1440px * 100 */
+    margin-top: calc(-10px * var(--scale));
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 3.47vh; /* 50px / 1440px * 100 */
+    font-size: calc(50px * var(--scale));
 }
 .slika5 img {
-    margin-top: 0px;
-    margin-left: 0px;
-    width: 33.59vw; /* 860px / 2560px * 100 */
-    height: 34.72vh; /* 500px / 1440px * 100 - Keeps original 2:1 ratio */
+    margin-top: calc(0px * var(--scale));
+    margin-left: calc(0px * var(--scale));
+    width: calc(860px * var(--scale));
+    height: calc(500px * var(--scale));  /* Keeps original 2:1 ratio */
 }
 .horizontal-container5 {
     display: flex;
     flex-direction: row;
-    gap: 11.72vw; /* 300px / 2560px * 100 */
+    gap: calc(300px * var(--scale));
     align-items: flex-start; /* Changed from center to align tops */
-    margin-top: -33.3vh; /* -480px / 1440px * 100 */
-    margin-left: 46.88vw; /* 1200px / 2560px * 100 */
+    margin-top: calc(-480px * var(--scale));
+    margin-left: calc(1200px * var(--scale));
 }
 
 .vertical-container5 {
     display: flex;
     flex-direction: column;
-    gap: 20.83vh; /* 300px / 1440px * 100 - Adjust vertical spacing as needed */
+    gap: calc(300px * var(--scale)); /* Adjust vertical spacing as needed */
 }
 
 .wordofp5 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 1.39vh; /* 20px / 1440px * 100 */
+    font-size: calc(20px * var(--scale));
 }
 
 .wordofs5 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 1.39vh; /* 20px / 1440px * 100 */
+    font-size: calc(20px * var(--scale));
     /* Remove margin-left - flex handles positioning */
 }
 
 .wordofw5 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 1.39vh; /* 20px / 1440px * 100 */
+    font-size: calc(20px * var(--scale));
     /* Remove margins - flex handles positioning */
 }
 .wordofp5 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 2.08vh; /* 30px / 1440px * 100 */
+    font-size: calc(30px * var(--scale));
 }
 
 .wordofs5 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 2.08vh; /* 30px / 1440px * 100 */
+    font-size: calc(30px * var(--scale));
     /* Remove margin-left - flex handles positioning */
 }
 
 .wordofw5 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 2.08vh; /* 30px / 1440px * 100 */
+    font-size: calc(30px * var(--scale));
     /* Remove margins - flex handles positioning */
 }
 .number3 {
-    margin-top: 34.7vh; /* 500px / 1440px * 100 */
+    margin-top: calc(500px * var(--scale));
     width: 100%;
-    height: 4.17vh; /* 60px / 1440px * 100 */
+    height: calc(60px * var(--scale));
     background-color: rgb(180, 0, 0);
     text-align: center;
-    font-size: 2.5vh; /* 36px / 1440px * 100 */
+    font-size: calc(36px * var(--scale));           /* Bigger text */
     font-family: 'Impact', 'Arial Black', sans-serif;  /* Cool bold font */
     font-weight: bold;         /* Extra bold */
     color: rgb(41, 5, 5);              /* White text for contrast */
-    line-height: 4.17vh; /* 60px / 1440px * 100 - Centers text vertically in the 60px height */
+    line-height: calc(60px * var(--scale));        /* Centers text vertically in the 60px height */
 }
 .tekst6{
-    margin-top: -3.47vh; /* -50px / 1440px * 100 */
+    margin-top: calc(-10px * var(--scale));
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 3.47vh; /* 50px / 1440px * 100 */
+    font-size: calc(50px * var(--scale));
 }
 .slika6 img {
-    margin-top: 0px;
-    margin-left: 0px;
-    width: 33.59vw; /* 860px / 2560px * 100 */
-    height: 59.72vh; /* 860px / 1440px * 100 - Keeps original 2:1 ratio */
+    margin-top: calc(0px * var(--scale));
+    margin-left: calc(0px * var(--scale));
+    width: calc(860px * var(--scale));
+    height: calc(860px * var(--scale));  /* Keeps original 2:1 ratio */
 }
 .horizontal-container6 {
     display: flex;
     flex-direction: row;
-    gap: 11.72vw; /* 300px / 2560px * 100 */
+    gap: calc(300px * var(--scale));
     align-items: flex-start; /* Changed from center to align tops */
-    margin-top: -33.3vh; /* -480px / 1440px * 100 */
-    margin-left: 46.88vw; /* 1200px / 2560px * 100 */
+    margin-top: calc(-480px * var(--scale));
+    margin-left: calc(1200px * var(--scale));
 }
 
 .vertical-container6 {
     display: flex;
     flex-direction: column;
-    gap: 20.83vh; /* 300px / 1440px * 100 - Adjust vertical spacing as needed */
+    gap: calc(300px * var(--scale)); /* Adjust vertical spacing as needed */
 }
 
 .wordofp6 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 1.39vh; /* 20px / 1440px * 100 */
+    font-size: calc(20px * var(--scale));
 }
 
 .wordofs6 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 1.39vh; /* 20px / 1440px * 100 */
+    font-size: calc(20px * var(--scale));
     /* Remove margin-left - flex handles positioning */
 }
 
 .wordofw6 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 1.39vh; /* 20px / 1440px * 100 */
+    font-size: calc(20px * var(--scale));
     /* Remove margins - flex handles positioning */
 }
 .wordofp6 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 2.08vh; /* 30px / 1440px * 100 */
+    font-size: calc(30px * var(--scale));
 }
 
 .wordofs6 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 2.08vh; /* 30px / 1440px * 100 */
+    font-size: calc(30px * var(--scale));
     /* Remove margin-left - flex handles positioning */
 }
 
 .wordofw6 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 2.08vh; /* 30px / 1440px * 100 */
+    font-size: calc(30px * var(--scale));
     /* Remove margins - flex handles positioning */
 }
 .number2 {
-    margin-top: 34.7vh; /* 500px / 1440px * 100 */
+    margin-top: calc(500px * var(--scale));
     width: 100%;
-    height: 4.17vh; /* 60px / 1440px * 100 */
+    height: calc(60px * var(--scale));
     background-color: rgb(180, 0, 0);
     text-align: center;
-    font-size: 2.5vh; /* 36px / 1440px * 100 */
+    font-size: calc(36px * var(--scale));           /* Bigger text */
     font-family: 'Impact', 'Arial Black', sans-serif;  /* Cool bold font */
     font-weight: bold;         /* Extra bold */
     color: rgb(41, 5, 5);              /* White text for contrast */
-    line-height: 4.17vh; /* 60px / 1440px * 100 - Centers text vertically in the 60px height */
+    line-height: calc(60px * var(--scale));        /* Centers text vertically in the 60px height */
 }
 .tekst7{
-    margin-top: -3.47vh; /* -50px / 1440px * 100 */
+    margin-top: calc(-10px * var(--scale));
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 3.47vh; /* 50px / 1440px * 100 */
+    font-size: calc(50px * var(--scale));
 }
 .slika7 img {
-    margin-top: 0px;
-    margin-left: 0px;
-    width: 33.59vw; /* 860px / 2560px * 100 */
-    height: 38.89vh; /* 560px / 1440px * 100 - Keeps original 2:1 ratio */
+    margin-top: calc(0px * var(--scale));
+    margin-left: calc(0px * var(--scale));
+    width: calc(860px * var(--scale));
+    height: calc(560px * var(--scale));  /* Keeps original 2:1 ratio */
 }
 .horizontal-container7 {
     display: flex;
     flex-direction: row;
-    gap: 11.72vw; /* 300px / 2560px * 100 */
+    gap: calc(300px * var(--scale));
     align-items: flex-start; /* Changed from center to align tops */
-    margin-top: -33.3vh; /* -480px / 1440px * 100 */
-    margin-left: 46.88vw; /* 1200px / 2560px * 100 */
+    margin-top: calc(-480px * var(--scale));
+    margin-left: calc(1200px * var(--scale));
 }
 
 .vertical-container7 {
     display: flex;
     flex-direction: column;
-    gap: 20.83vh; /* 300px / 1440px * 100 - Adjust vertical spacing as needed */
+    gap: calc(300px * var(--scale)); /* Adjust vertical spacing as needed */
 }
 
 .wordofp7 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 1.39vh; /* 20px / 1440px * 100 */
+    font-size: calc(20px * var(--scale));
 }
 
 .wordofs7 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 1.39vh; /* 20px / 1440px * 100 */
+    font-size: calc(20px * var(--scale));
     /* Remove margin-left - flex handles positioning */
 }
 
 .wordofw7  {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 1.39vh; /* 20px / 1440px * 100 */
+    font-size: calc(20px * var(--scale));
     /* Remove margins - flex handles positioning */
 }
 .wordofp7 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 2.08vh; /* 30px / 1440px * 100 */
+    font-size: calc(30px * var(--scale));
 }
 
 .wordofs7 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 2.08vh; /* 30px / 1440px * 100 */
+    font-size: calc(30px * var(--scale));
     /* Remove margin-left - flex handles positioning */
 }
 
 .wordofw7 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 2.08vh; /* 30px / 1440px * 100 */
+    font-size: calc(30px * var(--scale));
     /* Remove margins - flex handles positioning */
 }
 .number1 {
-    margin-top: 34.7vh; /* 500px / 1440px * 100 */
+    margin-top: calc(500px * var(--scale));
     width: 100%;
-    height: 4.17vh; /* 60px / 1440px * 100 */
+    height: calc(60px * var(--scale));
     background-color: rgb(180, 0, 0);
     text-align: center;
-    font-size: 2.5vh; /* 36px / 1440px * 100 */
+    font-size: calc(36px * var(--scale));           /* Bigger text */
     font-family: 'Impact', 'Arial Black', sans-serif;  /* Cool bold font */
     font-weight: bold;         /* Extra bold */
     color: rgb(41, 5, 5);              /* White text for contrast */
-    line-height: 4.17vh; /* 60px / 1440px * 100 - Centers text vertically in the 60px height */
+    line-height: calc(60px * var(--scale));        /* Centers text vertically in the 60px height */
 }
 .tekst8{
-    margin-top: -3.47vh; /* -50px / 1440px * 100 */
+    margin-top: calc(-10px * var(--scale));
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 3.47vh; /* 50px / 1440px * 100 */
+    font-size: calc(50px * var(--scale));
 }
 .slika8 img {
-    margin-top: 0px;
-    margin-left: 0px;
-    width: 33.59vw; /* 860px / 2560px * 100 */
-    height: 38.89vh; /* 560px / 1440px * 100 - Keeps original 2:1 ratio */
+    margin-top: calc(0px * var(--scale));
+    margin-left: calc(0px * var(--scale));
+    width: calc(860px * var(--scale));
+    height: calc(560px * var(--scale));  /* Keeps original 2:1 ratio */
 }
 .horizontal-container8 {
     display: flex;
     flex-direction: row;
-    gap: 11.72vw; /* 300px / 2560px * 100 */
+    gap: calc(300px * var(--scale));
     align-items: flex-start; /* Changed from center to align tops */
-    margin-top: -33.3vh; /* -480px / 1440px * 100 */
-    margin-left: 46.88vw; /* 1200px / 2560px * 100 */
+    margin-top: calc(-480px * var(--scale));
+    margin-left: calc(1200px * var(--scale));
 }
 
 .vertical-container8 {
     display: flex;
     flex-direction: column;
-    gap: 20.83vh; /* 300px / 1440px * 100 - Adjust vertical spacing as needed */
+    gap: calc(300px * var(--scale)); /* Adjust vertical spacing as needed */
 }
 
 .wordofp8 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 1.39vh; /* 20px / 1440px * 100 */
+    font-size: calc(20px * var(--scale));
 }
 
 .wordofs8 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 1.39vh; /* 20px / 1440px * 100 */
+    font-size: calc(20px * var(--scale));
     /* Remove margin-left - flex handles positioning */
 }
 
 .wordofw8  {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 1.39vh; /* 20px / 1440px * 100 */
+    font-size: calc(20px * var(--scale));
     /* Remove margins - flex handles positioning */
 }
 .wordofp8 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 2.08vh; /* 30px / 1440px * 100 */
+    font-size: calc(30px * var(--scale));
 }
 
 .wordofs8 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 2.08vh; /* 30px / 1440px * 100 */
+    font-size: calc(30px * var(--scale));
     /* Remove margin-left - flex handles positioning */
 }
 
 .wordofw8 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 2.08vh; /* 30px / 1440px * 100 */
+    font-size: calc(30px * var(--scale));
     /* Remove margins - flex handles positioning */
 }
 footer {
-    margin-top: 48.61vh; /* 700px / 1440px * 100 */
+    margin-top: calc(700px * var(--scale));
     background-color: black;
     color: white;
     text-align: center;
-    padding: 1.39vh; /* 20px / 1440px * 100 */
+    padding: calc(20px * var(--scale));
 }
+
 
 
 
