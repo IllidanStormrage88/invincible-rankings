@@ -1,6 +1,9 @@
+/* Add this viewport meta tag to your HTML: <meta name="viewport" content="width=device-width, initial-scale=1.0"> */
+
 h1 {
     text-align: center; /* Center the whole h1 element */
 }
+
 /* AD POSITIONING - Simple absolute positioning */
 .ad-banner-top {
     position: absolute;
@@ -19,9 +22,9 @@ h1 {
 }
 
 .first-text {
-        color: #DC143C;
+    color: #DC143C;
     font-weight: bold;
-     }     /* Makes the text thick/bold */
+} /* Makes the text thick/bold */
 
 .first-text1 {
     font-family: Arial, sans-serif;
@@ -30,9 +33,9 @@ h1 {
 }
 
 .first-text2 {
-        color: #DC143C;
+    color: #DC143C;
     font-weight: bold;   
-  }  /* Makes the text thick/bold */
+} /* Makes the text thick/bold */
 
 .content {
     position: absolute;
@@ -40,9 +43,10 @@ h1 {
     left: 50%;         /* Move to horizontal center */
     transform: translateX(-50%);
     line-height: 0.5;
-    color: white
-     /* Center it perfectly */
+    color: white;
+    /* Center it perfectly */
 }
+
 .blue-stripe {
     position: absolute;
     top: 0px;
@@ -53,6 +57,7 @@ h1 {
     background: linear-gradient(to right, black 0%, #59C3F2 25%, #0066CC 50%, #59C3F2 75%, black 100%);
     z-index: -2;
 }
+
 .transition {
     position: absolute;
     top: 6.6vh; /* 95px / 1440px * 100 */
@@ -76,6 +81,7 @@ h1 {
     background-color: black;
     z-index: -3;
 }
+
 .number10 {
     margin-top: 34.7vh; /* 500px / 1440px * 100 */
     width: 100%;
@@ -88,18 +94,21 @@ h1 {
     color: rgb(41, 5, 5);              /* White text for contrast */
     line-height: 4.17vh; /* 60px / 1440px * 100 - Centers text vertically in the 60px height */
 }
+
 .tekst{
     margin-top: -3.47vh; /* -50px / 1440px * 100 */
     text-align: center;
     color: rgb(2, 255, 255);
     font-size: 3.47vh; /* 50px / 1440px * 100 */
 }
+
 .slika img {
     margin-top: 0px;
     margin-left: 0px;    /* Moves right, other elements respect this space */
     width: 37.5vw; /* 960px / 2560px * 100 */
     height: 33.3vh; /* 480px / 1440px * 100 */
 }
+
 .horizontal-container {
     display: flex;
     flex-direction: row;
@@ -134,6 +143,7 @@ h1 {
     font-size: 1.39vh; /* 20px / 1440px * 100 */
     /* Remove margins - flex handles positioning */
 }
+
 .wordofp span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
@@ -153,6 +163,7 @@ h1 {
     font-size: 2.08vh; /* 30px / 1440px * 100 */
     /* Remove margins - flex handles positioning */
 }
+
 .number9 {
     margin-top: 34.7vh; /* 500px / 1440px * 100 */
     width: 100%;
@@ -165,18 +176,21 @@ h1 {
     color: rgb(41, 5, 5);              /* White text for contrast */
     line-height: 4.17vh; /* 60px / 1440px * 100 - Centers text vertically in the 60px height */
 }
+
 .tekst0{
     margin-top: -3.47vh; /* -50px / 1440px * 100 */
     text-align: center;
     color: rgb(2, 255, 255);
     font-size: 3.47vh; /* 50px / 1440px * 100 */
 }
+
 .slika0 img {
     margin-top: 0px;
     margin-left: 0px;
     width: 37.5vw; /* 960px / 2560px * 100 */
     height: 33.3vh; /* 480px / 1440px * 100 - Keeps original 2:1 ratio */
 }
+
 .horizontal-container0 {
     display: flex;
     flex-direction: row;
@@ -211,6 +225,7 @@ h1 {
     font-size: 1.39vh; /* 20px / 1440px * 100 */
     /* Remove margins - flex handles positioning */
 }
+
 .wordofp0 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
@@ -230,6 +245,7 @@ h1 {
     font-size: 2.08vh; /* 30px / 1440px * 100 */
     /* Remove margins - flex handles positioning */
 }
+
 .number8 {
     margin-top: 34.7vh; /* 500px / 1440px * 100 */
     width: 100%;
@@ -242,18 +258,21 @@ h1 {
     color: rgb(41, 5, 5);              /* White text for contrast */
     line-height: 4.17vh; /* 60px / 1440px * 100 - Centers text vertically in the 60px height */
 }
+
 .tekst1{
     margin-top: -3.47vh; /* -50px / 1440px * 100 */
     text-align: center;
     color: rgb(2, 255, 255);
     font-size: 3.47vh; /* 50px / 1440px * 100 */
 }
+
 .slika1 img {
     margin-top: 0px;
     margin-left: 0px;
     width: 37.5vw; /* 960px / 2560px * 100 */
     height: 47.22vh; /* 680px / 1440px * 100 - Keeps original 2:1 ratio */
 }
+
 .horizontal-container1 {
     display: flex;
     flex-direction: row;
@@ -288,6 +307,7 @@ h1 {
     font-size: 1.39vh; /* 20px / 1440px * 100 */
     /* Remove margins - flex handles positioning */
 }
+
 .wordofp1 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
@@ -307,6 +327,7 @@ h1 {
     font-size: 2.08vh; /* 30px / 1440px * 100 */
     /* Remove margins - flex handles positioning */
 }
+
 .number7 {
     margin-top: 34.7vh; /* 500px / 1440px * 100 */
     width: 100%;
@@ -319,18 +340,21 @@ h1 {
     color: rgb(41, 5, 5);              /* White text for contrast */
     line-height: 4.17vh; /* 60px / 1440px * 100 - Centers text vertically in the 60px height */
 }
+
 .tekst2{
     margin-top: -3.47vh; /* -50px / 1440px * 100 */
     text-align: center;
     color: rgb(2, 255, 255);
     font-size: 3.47vh; /* 50px / 1440px * 100 */
 }
+
 .slika2 img {
     margin-top: 0px;
     margin-left: 0px;
     width: 37.5vw; /* 960px / 2560px * 100 */
     height: 47.22vh; /* 680px / 1440px * 100 - Keeps original 2:1 ratio */
 }
+
 .horizontal-container2 {
     display: flex;
     flex-direction: row;
@@ -365,6 +389,7 @@ h1 {
     font-size: 1.39vh; /* 20px / 1440px * 100 */
     /* Remove margins - flex handles positioning */
 }
+
 .wordofp2 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
@@ -384,6 +409,7 @@ h1 {
     font-size: 2.08vh; /* 30px / 1440px * 100 */
     /* Remove margins - flex handles positioning */
 }
+
 .number6 {
     margin-top: 34.7vh; /* 500px / 1440px * 100 */
     width: 100%;
@@ -396,18 +422,21 @@ h1 {
     color: rgb(41, 5, 5);              /* White text for contrast */
     line-height: 4.17vh; /* 60px / 1440px * 100 - Centers text vertically in the 60px height */
 }
+
 .tekst3{
     margin-top: -3.47vh; /* -50px / 1440px * 100 */
     text-align: center;
     color: rgb(2, 255, 255);
     font-size: 3.47vh; /* 50px / 1440px * 100 */
 }
+
 .slika3 img {
     margin-top: 0px;
     margin-left: 0px;
     width: 37.5vw; /* 960px / 2560px * 100 */
     height: 47.22vh; /* 680px / 1440px * 100 - Keeps original 2:1 ratio */
 }
+
 .horizontal-container3 {
     display: flex;
     flex-direction: row;
@@ -442,6 +471,7 @@ h1 {
     font-size: 1.39vh; /* 20px / 1440px * 100 */
     /* Remove margins - flex handles positioning */
 }
+
 .wordofp3 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
@@ -461,6 +491,7 @@ h1 {
     font-size: 2.08vh; /* 30px / 1440px * 100 */
     /* Remove margins - flex handles positioning */
 }
+
 .number5 {
     margin-top: 34.7vh; /* 500px / 1440px * 100 */
     width: 100%;
@@ -473,18 +504,21 @@ h1 {
     color: rgb(41, 5, 5);              /* White text for contrast */
     line-height: 4.17vh; /* 60px / 1440px * 100 - Centers text vertically in the 60px height */
 }
+
 .tekst4{
     margin-top: -3.47vh; /* -50px / 1440px * 100 */
     text-align: center;
     color: rgb(2, 255, 255);
     font-size: 3.47vh; /* 50px / 1440px * 100 */
 }
+
 .slika4 img {
     margin-top: 0px;
     margin-left: 0px;
     width: 33.59vw; /* 860px / 2560px * 100 */
     height: 34.72vh; /* 500px / 1440px * 100 - Keeps original 2:1 ratio */
 }
+
 .horizontal-container4 {
     display: flex;
     flex-direction: row;
@@ -519,6 +553,7 @@ h1 {
     font-size: 1.39vh; /* 20px / 1440px * 100 */
     /* Remove margins - flex handles positioning */
 }
+
 .wordofp4 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
@@ -538,6 +573,7 @@ h1 {
     font-size: 2.08vh; /* 30px / 1440px * 100 */
     /* Remove margins - flex handles positioning */
 }
+
 .number4 {
     margin-top: 34.7vh; /* 500px / 1440px * 100 */
     width: 100%;
@@ -550,18 +586,21 @@ h1 {
     color: rgb(41, 5, 5);              /* White text for contrast */
     line-height: 4.17vh; /* 60px / 1440px * 100 - Centers text vertically in the 60px height */
 }
+
 .tekst5{
     margin-top: -3.47vh; /* -50px / 1440px * 100 */
     text-align: center;
     color: rgb(2, 255, 255);
     font-size: 3.47vh; /* 50px / 1440px * 100 */
 }
+
 .slika5 img {
     margin-top: 0px;
     margin-left: 0px;
     width: 33.59vw; /* 860px / 2560px * 100 */
     height: 34.72vh; /* 500px / 1440px * 100 - Keeps original 2:1 ratio */
 }
+
 .horizontal-container5 {
     display: flex;
     flex-direction: row;
@@ -596,6 +635,7 @@ h1 {
     font-size: 1.39vh; /* 20px / 1440px * 100 */
     /* Remove margins - flex handles positioning */
 }
+
 .wordofp5 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
@@ -615,6 +655,7 @@ h1 {
     font-size: 2.08vh; /* 30px / 1440px * 100 */
     /* Remove margins - flex handles positioning */
 }
+
 .number3 {
     margin-top: 34.7vh; /* 500px / 1440px * 100 */
     width: 100%;
@@ -627,18 +668,21 @@ h1 {
     color: rgb(41, 5, 5);              /* White text for contrast */
     line-height: 4.17vh; /* 60px / 1440px * 100 - Centers text vertically in the 60px height */
 }
+
 .tekst6{
     margin-top: -3.47vh; /* -50px / 1440px * 100 */
     text-align: center;
     color: rgb(2, 255, 255);
     font-size: 3.47vh; /* 50px / 1440px * 100 */
 }
+
 .slika6 img {
     margin-top: 0px;
     margin-left: 0px;
     width: 33.59vw; /* 860px / 2560px * 100 */
     height: 59.72vh; /* 860px / 1440px * 100 - Keeps original 2:1 ratio */
 }
+
 .horizontal-container6 {
     display: flex;
     flex-direction: row;
@@ -673,6 +717,7 @@ h1 {
     font-size: 1.39vh; /* 20px / 1440px * 100 */
     /* Remove margins - flex handles positioning */
 }
+
 .wordofp6 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
@@ -692,6 +737,7 @@ h1 {
     font-size: 2.08vh; /* 30px / 1440px * 100 */
     /* Remove margins - flex handles positioning */
 }
+
 .number2 {
     margin-top: 34.7vh; /* 500px / 1440px * 100 */
     width: 100%;
@@ -704,18 +750,21 @@ h1 {
     color: rgb(41, 5, 5);              /* White text for contrast */
     line-height: 4.17vh; /* 60px / 1440px * 100 - Centers text vertically in the 60px height */
 }
+
 .tekst7{
     margin-top: -3.47vh; /* -50px / 1440px * 100 */
     text-align: center;
     color: rgb(2, 255, 255);
     font-size: 3.47vh; /* 50px / 1440px * 100 */
 }
+
 .slika7 img {
     margin-top: 0px;
     margin-left: 0px;
     width: 33.59vw; /* 860px / 2560px * 100 */
     height: 38.89vh; /* 560px / 1440px * 100 - Keeps original 2:1 ratio */
 }
+
 .horizontal-container7 {
     display: flex;
     flex-direction: row;
@@ -750,6 +799,7 @@ h1 {
     font-size: 1.39vh; /* 20px / 1440px * 100 */
     /* Remove margins - flex handles positioning */
 }
+
 .wordofp7 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
@@ -769,6 +819,7 @@ h1 {
     font-size: 2.08vh; /* 30px / 1440px * 100 */
     /* Remove margins - flex handles positioning */
 }
+
 .number1 {
     margin-top: 34.7vh; /* 500px / 1440px * 100 */
     width: 100%;
@@ -781,18 +832,21 @@ h1 {
     color: rgb(41, 5, 5);              /* White text for contrast */
     line-height: 4.17vh; /* 60px / 1440px * 100 - Centers text vertically in the 60px height */
 }
+
 .tekst8{
     margin-top: -3.47vh; /* -50px / 1440px * 100 */
     text-align: center;
     color: rgb(2, 255, 255);
     font-size: 3.47vh; /* 50px / 1440px * 100 */
 }
+
 .slika8 img {
     margin-top: 0px;
     margin-left: 0px;
     width: 33.59vw; /* 860px / 2560px * 100 */
     height: 38.89vh; /* 560px / 1440px * 100 - Keeps original 2:1 ratio */
 }
+
 .horizontal-container8 {
     display: flex;
     flex-direction: row;
@@ -827,6 +881,7 @@ h1 {
     font-size: 1.39vh; /* 20px / 1440px * 100 */
     /* Remove margins - flex handles positioning */
 }
+
 .wordofp8 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
@@ -846,12 +901,132 @@ h1 {
     font-size: 2.08vh; /* 30px / 1440px * 100 */
     /* Remove margins - flex handles positioning */
 }
+
 footer {
     margin-top: 48.61vh; /* 700px / 1440px * 100 */
     background-color: black;
     color: white;
     text-align: center;
     padding: 1.39vh; /* 20px / 1440px * 100 */
+}
+
+/* ADD THESE RESPONSIVE FIXES TO THE END OF YOUR CSS */
+
+/* Make sure viewport meta tag is in your HTML: */
+/* <meta name="viewport" content="width=device-width, initial-scale=1.0"> */
+
+/* Mobile fixes - keep your layout but make it usable */
+@media (max-width: 768px) {
+    /* Stack the horizontal containers vertically on mobile */
+    .horizontal-container,
+    .horizontal-container0,
+    .horizontal-container1,
+    .horizontal-container2,
+    .horizontal-container3,
+    .horizontal-container4,
+    .horizontal-container5,
+    .horizontal-container6,
+    .horizontal-container7,
+    .horizontal-container8 {
+        flex-direction: column !important;
+        margin-left: 5vw !important;
+        gap: 5vh !important;
+        margin-top: -10vh !important;
+    }
+    
+    /* Make images responsive on mobile */
+    .slika img,
+    .slika0 img,
+    .slika1 img,
+    .slika2 img,
+    .slika3 img,
+    .slika4 img,
+    .slika5 img,
+    .slika6 img,
+    .slika7 img,
+    .slika8 img {
+        width: 90vw !important;
+        height: auto !important;
+        max-width: 400px !important;
+    }
+    
+    /* Reduce vertical spacing on mobile */
+    .vertical-container,
+    .vertical-container0,
+    .vertical-container1,
+    .vertical-container2,
+    .vertical-container3,
+    .vertical-container4,
+    .vertical-container5,
+    .vertical-container6,
+    .vertical-container7,
+    .vertical-container8 {
+        gap: 8vh !important;
+    }
+    
+    /* Keep the ad banner positioned better on mobile */
+    .ad-banner-top {
+        top: 30vh !important;
+        width: 90% !important;
+    }
+    
+    .ad-banner-bottom {
+        left: 50% !important;
+        width: 90% !important;
+    }
+}
+
+/* Tablet adjustments */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .horizontal-container,
+    .horizontal-container0,
+    .horizontal-container1,
+    .horizontal-container2,
+    .horizontal-container3,
+    .horizontal-container4,
+    .horizontal-container5,
+    .horizontal-container6,
+    .horizontal-container7,
+    .horizontal-container8 {
+        margin-left: 25vw !important;
+        gap: 8vw !important;
+    }
+}
+
+/* Very small phones */
+@media (max-width: 480px) {
+    /* Make text more readable */
+    .first-text1 {
+        font-size: 6vh !important;
+    }
+    
+    .tekst,
+    .tekst0,
+    .tekst1,
+    .tekst2,
+    .tekst3,
+    .tekst4,
+    .tekst5,
+    .tekst6,
+    .tekst7,
+    .tekst8 {
+        font-size: 4vh !important;
+    }
+    
+    /* Stack everything more tightly */
+    .horizontal-container,
+    .horizontal-container0,
+    .horizontal-container1,
+    .horizontal-container2,
+    .horizontal-container3,
+    .horizontal-container4,
+    .horizontal-container5,
+    .horizontal-container6,
+    .horizontal-container7,
+    .horizontal-container8 {
+        margin-left: 2vw !important;
+        margin-top: -5vh !important;
+    }
 }
 
 
