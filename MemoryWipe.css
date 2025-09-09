@@ -4,7 +4,7 @@ h1 {
 /* AD POSITIONING - Simple absolute positioning */
 .ad-banner-top {
     position: absolute;
-    top: 350px;
+    top: 24.3vh; /* 350px / 1440px * 100 */
     left: 50%;
     transform: translateX(-50%);
     z-index: 20;
@@ -12,8 +12,8 @@ h1 {
 
 .ad-banner-bottom {
     position: absolute;
-    top: 15200px; /* Near the end of content */
-    left: 50px;
+    top: 1055.6vh; /* 15200px / 1440px * 100 */
+    left: 1.95vw; /* 50px / 2560px * 100 */
     transform: translateX(-50%);
     z-index: 20;
 }
@@ -26,7 +26,7 @@ h1 {
 .first-text1 {
     font-family: Arial, sans-serif;
     color: yellow;
-    font-size: 60px;
+    font-size: 4.17vh; /* 60px / 1440px * 100 */
 }
 
 .first-text2 {
@@ -36,7 +36,7 @@ h1 {
 
 .content {
     position: absolute;
-    top: 200px;        /* Move down from top (adjust as needed) */
+    top: 13.9vh; /* 200px / 1440px * 100 */
     left: 50%;         /* Move to horizontal center */
     transform: translateX(-50%);
     line-height: 0.5;
@@ -48,18 +48,18 @@ h1 {
     top: 0px;
     left: 50%;
     transform: translateX(-50%);
-    width: 2560px;
-    height: 100px;
+    width: 100vw; /* 2560px converted to full viewport width */
+    height: 6.94vh; /* 100px / 1440px * 100 */
     background: linear-gradient(to right, black 0%, #59C3F2 25%, #0066CC 50%, #59C3F2 75%, black 100%);
     z-index: -2;
 }
 .transition {
     position: absolute;
-    top: 95px;
+    top: 6.6vh; /* 95px / 1440px * 100 */
     left: 50%;
     transform: translateX(-50%);
-    width: 2560px;
-    height: 10px;
+    width: 100vw; /* 2560px converted to full viewport width */
+    height: 0.69vh; /* 10px / 1440px * 100 */
     background: 
         linear-gradient(to bottom, #59C3F2 0%, black 100%),
         linear-gradient(to right, black 0%, #59C3F2 25%, #0066CC 50%, #59C3F2 75%, black 100%);
@@ -77,781 +77,781 @@ h1 {
     z-index: -3;
 }
 .number10 {
-    margin-top: 500px;
+    margin-top: 34.7vh; /* 500px / 1440px * 100 */
     width: 100%;
-    height: 60px;
+    height: 4.17vh; /* 60px / 1440px * 100 */
     background-color: rgb(180, 0, 0);
     text-align: center;
-    font-size: 36px;           /* Bigger text */
+    font-size: 2.5vh; /* 36px / 1440px * 100 */
     font-family: 'Impact', 'Arial Black', sans-serif;  /* Cool bold font */
     font-weight: bold;         /* Extra bold */
     color: rgb(41, 5, 5);              /* White text for contrast */
-    line-height: 60px;        /* Centers text vertically in the 60px height */
+    line-height: 4.17vh; /* 60px / 1440px * 100 - Centers text vertically in the 60px height */
 }
 .tekst{
-    margin-top:-50px;
+    margin-top: -3.47vh; /* -50px / 1440px * 100 */
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 50px;
+    font-size: 3.47vh; /* 50px / 1440px * 100 */
 }
 .slika img {
     margin-top: 0px;
     margin-left: 0px;    /* Moves right, other elements respect this space */
-    width: 960px;
-    height: 480px;
+    width: 37.5vw; /* 960px / 2560px * 100 */
+    height: 33.3vh; /* 480px / 1440px * 100 */
 }
 .horizontal-container {
     display: flex;
     flex-direction: row;
-    gap: 300px;
+    gap: 11.72vw; /* 300px / 2560px * 100 */
     align-items: flex-start; /* Changed from center to align tops */
-    margin-top: -480px;
-    margin-left: 1200px;
+    margin-top: -33.3vh; /* -480px / 1440px * 100 */
+    margin-left: 46.88vw; /* 1200px / 2560px * 100 */
 }
 
 .vertical-container {
     display: flex;
     flex-direction: column;
-    gap: 300px; /* Adjust vertical spacing as needed */
+    gap: 20.83vh; /* 300px / 1440px * 100 - Adjust vertical spacing as needed */
 }
 
 .wordofp {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 20px;
+    font-size: 1.39vh; /* 20px / 1440px * 100 */
 }
 
 .wordofs {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 20px;
+    font-size: 1.39vh; /* 20px / 1440px * 100 */
     /* Remove margin-left - flex handles positioning */
 }
 
 .wordofw {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 20px;
+    font-size: 1.39vh; /* 20px / 1440px * 100 */
     /* Remove margins - flex handles positioning */
 }
 .wordofp span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 30px;
+    font-size: 2.08vh; /* 30px / 1440px * 100 */
 }
 
 .wordofs span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 30px;
+    font-size: 2.08vh; /* 30px / 1440px * 100 */
     /* Remove margin-left - flex handles positioning */
 }
 
 .wordofw span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 30px;
+    font-size: 2.08vh; /* 30px / 1440px * 100 */
     /* Remove margins - flex handles positioning */
 }
 .number9 {
-    margin-top: 500px;
+    margin-top: 34.7vh; /* 500px / 1440px * 100 */
     width: 100%;
-    height: 60px;
+    height: 4.17vh; /* 60px / 1440px * 100 */
     background-color: rgb(180, 0, 0);
     text-align: center;
-    font-size: 36px;           /* Bigger text */
+    font-size: 2.5vh; /* 36px / 1440px * 100 */
     font-family: 'Impact', 'Arial Black', sans-serif;  /* Cool bold font */
     font-weight: bold;         /* Extra bold */
     color: rgb(41, 5, 5);              /* White text for contrast */
-    line-height: 60px;        /* Centers text vertically in the 60px height */
+    line-height: 4.17vh; /* 60px / 1440px * 100 - Centers text vertically in the 60px height */
 }
 .tekst0{
-    margin-top:-50px;
+    margin-top: -3.47vh; /* -50px / 1440px * 100 */
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 50px;
+    font-size: 3.47vh; /* 50px / 1440px * 100 */
 }
 .slika0 img {
     margin-top: 0px;
     margin-left: 0px;
-    width: 960px;
-    height: 480px;  /* Keeps original 2:1 ratio */
+    width: 37.5vw; /* 960px / 2560px * 100 */
+    height: 33.3vh; /* 480px / 1440px * 100 - Keeps original 2:1 ratio */
 }
 .horizontal-container0 {
     display: flex;
     flex-direction: row;
-    gap: 300px;
+    gap: 11.72vw; /* 300px / 2560px * 100 */
     align-items: flex-start; /* Changed from center to align tops */
-    margin-top: -480px;
-    margin-left: 1200px;
+    margin-top: -33.3vh; /* -480px / 1440px * 100 */
+    margin-left: 46.88vw; /* 1200px / 2560px * 100 */
 }
 
 .vertical-container0 {
     display: flex;
     flex-direction: column;
-    gap: 300px; /* Adjust vertical spacing as needed */
+    gap: 20.83vh; /* 300px / 1440px * 100 - Adjust vertical spacing as needed */
 }
 
 .wordofp0 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 20px;
+    font-size: 1.39vh; /* 20px / 1440px * 100 */
 }
 
 .wordofs0 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 20px;
+    font-size: 1.39vh; /* 20px / 1440px * 100 */
     /* Remove margin-left - flex handles positioning */
 }
 
 .wordofw0 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 20px;
+    font-size: 1.39vh; /* 20px / 1440px * 100 */
     /* Remove margins - flex handles positioning */
 }
 .wordofp0 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 30px;
+    font-size: 2.08vh; /* 30px / 1440px * 100 */
 }
 
 .wordofs0 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 30px;
+    font-size: 2.08vh; /* 30px / 1440px * 100 */
     /* Remove margin-left - flex handles positioning */
 }
 
 .wordofw0 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 30px;
+    font-size: 2.08vh; /* 30px / 1440px * 100 */
     /* Remove margins - flex handles positioning */
 }
 .number8 {
-    margin-top: 500px;
+    margin-top: 34.7vh; /* 500px / 1440px * 100 */
     width: 100%;
-    height: 60px;
+    height: 4.17vh; /* 60px / 1440px * 100 */
     background-color: rgb(180, 0, 0);
     text-align: center;
-    font-size: 36px;           /* Bigger text */
+    font-size: 2.5vh; /* 36px / 1440px * 100 */
     font-family: 'Impact', 'Arial Black', sans-serif;  /* Cool bold font */
     font-weight: bold;         /* Extra bold */
     color: rgb(41, 5, 5);              /* White text for contrast */
-    line-height: 60px;        /* Centers text vertically in the 60px height */
+    line-height: 4.17vh; /* 60px / 1440px * 100 - Centers text vertically in the 60px height */
 }
 .tekst1{
-    margin-top:-50px;
+    margin-top: -3.47vh; /* -50px / 1440px * 100 */
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 50px;
+    font-size: 3.47vh; /* 50px / 1440px * 100 */
 }
 .slika1 img {
     margin-top: 0px;
     margin-left: 0px;
-    width: 960px;
-    height: 680px;  /* Keeps original 2:1 ratio */
+    width: 37.5vw; /* 960px / 2560px * 100 */
+    height: 47.22vh; /* 680px / 1440px * 100 - Keeps original 2:1 ratio */
 }
 .horizontal-container1 {
     display: flex;
     flex-direction: row;
-    gap: 300px;
+    gap: 11.72vw; /* 300px / 2560px * 100 */
     align-items: flex-start; /* Changed from center to align tops */
-    margin-top: -480px;
-    margin-left: 1200px;
+    margin-top: -33.3vh; /* -480px / 1440px * 100 */
+    margin-left: 46.88vw; /* 1200px / 2560px * 100 */
 }
 
 .vertical-container1 {
     display: flex;
     flex-direction: column;
-    gap: 300px; /* Adjust vertical spacing as needed */
+    gap: 20.83vh; /* 300px / 1440px * 100 - Adjust vertical spacing as needed */
 }
 
 .wordofp1 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 20px;
+    font-size: 1.39vh; /* 20px / 1440px * 100 */
 }
 
 .wordofs1 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 20px;
+    font-size: 1.39vh; /* 20px / 1440px * 100 */
     /* Remove margin-left - flex handles positioning */
 }
 
 .wordofw1 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 20px;
+    font-size: 1.39vh; /* 20px / 1440px * 100 */
     /* Remove margins - flex handles positioning */
 }
 .wordofp1 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 30px;
+    font-size: 2.08vh; /* 30px / 1440px * 100 */
 }
 
 .wordofs1 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 30px;
+    font-size: 2.08vh; /* 30px / 1440px * 100 */
     /* Remove margin-left - flex handles positioning */
 }
 
 .wordofw1 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 30px;
+    font-size: 2.08vh; /* 30px / 1440px * 100 */
     /* Remove margins - flex handles positioning */
 }
 .number7 {
-    margin-top: 500px;
+    margin-top: 34.7vh; /* 500px / 1440px * 100 */
     width: 100%;
-    height: 60px;
+    height: 4.17vh; /* 60px / 1440px * 100 */
     background-color: rgb(180, 0, 0);
     text-align: center;
-    font-size: 36px;           /* Bigger text */
+    font-size: 2.5vh; /* 36px / 1440px * 100 */
     font-family: 'Impact', 'Arial Black', sans-serif;  /* Cool bold font */
     font-weight: bold;         /* Extra bold */
     color: rgb(41, 5, 5);              /* White text for contrast */
-    line-height: 60px;        /* Centers text vertically in the 60px height */
+    line-height: 4.17vh; /* 60px / 1440px * 100 - Centers text vertically in the 60px height */
 }
 .tekst2{
-    margin-top:-50px;
+    margin-top: -3.47vh; /* -50px / 1440px * 100 */
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 50px;
+    font-size: 3.47vh; /* 50px / 1440px * 100 */
 }
 .slika2 img {
     margin-top: 0px;
     margin-left: 0px;
-    width: 960px;
-    height: 680px;  /* Keeps original 2:1 ratio */
+    width: 37.5vw; /* 960px / 2560px * 100 */
+    height: 47.22vh; /* 680px / 1440px * 100 - Keeps original 2:1 ratio */
 }
 .horizontal-container2 {
     display: flex;
     flex-direction: row;
-    gap: 300px;
+    gap: 11.72vw; /* 300px / 2560px * 100 */
     align-items: flex-start; /* Changed from center to align tops */
-    margin-top: -480px;
-    margin-left: 1200px;
+    margin-top: -33.3vh; /* -480px / 1440px * 100 */
+    margin-left: 46.88vw; /* 1200px / 2560px * 100 */
 }
 
 .vertical-container2 {
     display: flex;
     flex-direction: column;
-    gap: 300px; /* Adjust vertical spacing as needed */
+    gap: 20.83vh; /* 300px / 1440px * 100 - Adjust vertical spacing as needed */
 }
 
 .wordofp2 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 20px;
+    font-size: 1.39vh; /* 20px / 1440px * 100 */
 }
 
 .wordofs2 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 20px;
+    font-size: 1.39vh; /* 20px / 1440px * 100 */
     /* Remove margin-left - flex handles positioning */
 }
 
 .wordofw2 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 20px;
+    font-size: 1.39vh; /* 20px / 1440px * 100 */
     /* Remove margins - flex handles positioning */
 }
 .wordofp2 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 30px;
+    font-size: 2.08vh; /* 30px / 1440px * 100 */
 }
 
 .wordofs2 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 30px;
+    font-size: 2.08vh; /* 30px / 1440px * 100 */
     /* Remove margin-left - flex handles positioning */
 }
 
 .wordofw2 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 30px;
+    font-size: 2.08vh; /* 30px / 1440px * 100 */
     /* Remove margins - flex handles positioning */
 }
 .number6 {
-    margin-top: 500px;
+    margin-top: 34.7vh; /* 500px / 1440px * 100 */
     width: 100%;
-    height: 60px;
+    height: 4.17vh; /* 60px / 1440px * 100 */
     background-color: rgb(180, 0, 0);
     text-align: center;
-    font-size: 36px;           /* Bigger text */
+    font-size: 2.5vh; /* 36px / 1440px * 100 */
     font-family: 'Impact', 'Arial Black', sans-serif;  /* Cool bold font */
     font-weight: bold;         /* Extra bold */
     color: rgb(41, 5, 5);              /* White text for contrast */
-    line-height: 60px;        /* Centers text vertically in the 60px height */
+    line-height: 4.17vh; /* 60px / 1440px * 100 - Centers text vertically in the 60px height */
 }
 .tekst3{
-    margin-top:-50px;
+    margin-top: -3.47vh; /* -50px / 1440px * 100 */
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 50px;
+    font-size: 3.47vh; /* 50px / 1440px * 100 */
 }
 .slika3 img {
     margin-top: 0px;
     margin-left: 0px;
-    width: 960px;
-    height: 680px;  /* Keeps original 2:1 ratio */
+    width: 37.5vw; /* 960px / 2560px * 100 */
+    height: 47.22vh; /* 680px / 1440px * 100 - Keeps original 2:1 ratio */
 }
 .horizontal-container3 {
     display: flex;
     flex-direction: row;
-    gap: 300px;
+    gap: 11.72vw; /* 300px / 2560px * 100 */
     align-items: flex-start; /* Changed from center to align tops */
-    margin-top: -480px;
-    margin-left: 1200px;
+    margin-top: -33.3vh; /* -480px / 1440px * 100 */
+    margin-left: 46.88vw; /* 1200px / 2560px * 100 */
 }
 
 .vertical-container3 {
     display: flex;
     flex-direction: column;
-    gap: 300px; /* Adjust vertical spacing as needed */
+    gap: 20.83vh; /* 300px / 1440px * 100 - Adjust vertical spacing as needed */
 }
 
 .wordofp3 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 20px;
+    font-size: 1.39vh; /* 20px / 1440px * 100 */
 }
 
 .wordofs3 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 20px;
+    font-size: 1.39vh; /* 20px / 1440px * 100 */
     /* Remove margin-left - flex handles positioning */
 }
 
 .wordofw3 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 20px;
+    font-size: 1.39vh; /* 20px / 1440px * 100 */
     /* Remove margins - flex handles positioning */
 }
 .wordofp3 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 30px;
+    font-size: 2.08vh; /* 30px / 1440px * 100 */
 }
 
 .wordofs3 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 30px;
+    font-size: 2.08vh; /* 30px / 1440px * 100 */
     /* Remove margin-left - flex handles positioning */
 }
 
 .wordofw3 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 30px;
+    font-size: 2.08vh; /* 30px / 1440px * 100 */
     /* Remove margins - flex handles positioning */
 }
 .number5 {
-    margin-top: 500px;
+    margin-top: 34.7vh; /* 500px / 1440px * 100 */
     width: 100%;
-    height: 60px;
+    height: 4.17vh; /* 60px / 1440px * 100 */
     background-color: rgb(180, 0, 0);
     text-align: center;
-    font-size: 36px;           /* Bigger text */
+    font-size: 2.5vh; /* 36px / 1440px * 100 */
     font-family: 'Impact', 'Arial Black', sans-serif;  /* Cool bold font */
     font-weight: bold;         /* Extra bold */
     color: rgb(41, 5, 5);              /* White text for contrast */
-    line-height: 60px;        /* Centers text vertically in the 60px height */
+    line-height: 4.17vh; /* 60px / 1440px * 100 - Centers text vertically in the 60px height */
 }
 .tekst4{
-    margin-top:-50px;
+    margin-top: -3.47vh; /* -50px / 1440px * 100 */
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 50px;
+    font-size: 3.47vh; /* 50px / 1440px * 100 */
 }
 .slika4 img {
     margin-top: 0px;
     margin-left: 0px;
-    width: 860px;
-    height: 500px;  /* Keeps original 2:1 ratio */
+    width: 33.59vw; /* 860px / 2560px * 100 */
+    height: 34.72vh; /* 500px / 1440px * 100 - Keeps original 2:1 ratio */
 }
 .horizontal-container4 {
     display: flex;
     flex-direction: row;
-    gap: 300px;
+    gap: 11.72vw; /* 300px / 2560px * 100 */
     align-items: flex-start; /* Changed from center to align tops */
-    margin-top: -480px;
-    margin-left: 1200px;
+    margin-top: -33.3vh; /* -480px / 1440px * 100 */
+    margin-left: 46.88vw; /* 1200px / 2560px * 100 */
 }
 
 .vertical-container4 {
     display: flex;
     flex-direction: column;
-    gap: 300px; /* Adjust vertical spacing as needed */
+    gap: 20.83vh; /* 300px / 1440px * 100 - Adjust vertical spacing as needed */
 }
 
 .wordofp4 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 20px;
+    font-size: 1.39vh; /* 20px / 1440px * 100 */
 }
 
 .wordofs4 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 20px;
+    font-size: 1.39vh; /* 20px / 1440px * 100 */
     /* Remove margin-left - flex handles positioning */
 }
 
 .wordofw4 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 20px;
+    font-size: 1.39vh; /* 20px / 1440px * 100 */
     /* Remove margins - flex handles positioning */
 }
 .wordofp4 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 30px;
+    font-size: 2.08vh; /* 30px / 1440px * 100 */
 }
 
 .wordofs4 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 30px;
+    font-size: 2.08vh; /* 30px / 1440px * 100 */
     /* Remove margin-left - flex handles positioning */
 }
 
 .wordofw4 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 30px;
+    font-size: 2.08vh; /* 30px / 1440px * 100 */
     /* Remove margins - flex handles positioning */
 }
 .number4 {
-    margin-top: 500px;
+    margin-top: 34.7vh; /* 500px / 1440px * 100 */
     width: 100%;
-    height: 60px;
+    height: 4.17vh; /* 60px / 1440px * 100 */
     background-color: rgb(180, 0, 0);
     text-align: center;
-    font-size: 36px;           /* Bigger text */
+    font-size: 2.5vh; /* 36px / 1440px * 100 */
     font-family: 'Impact', 'Arial Black', sans-serif;  /* Cool bold font */
     font-weight: bold;         /* Extra bold */
     color: rgb(41, 5, 5);              /* White text for contrast */
-    line-height: 60px;        /* Centers text vertically in the 60px height */
+    line-height: 4.17vh; /* 60px / 1440px * 100 - Centers text vertically in the 60px height */
 }
 .tekst5{
-    margin-top:-50px;
+    margin-top: -3.47vh; /* -50px / 1440px * 100 */
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 50px;
+    font-size: 3.47vh; /* 50px / 1440px * 100 */
 }
 .slika5 img {
     margin-top: 0px;
     margin-left: 0px;
-    width: 860px;
-    height: 500px;  /* Keeps original 2:1 ratio */
+    width: 33.59vw; /* 860px / 2560px * 100 */
+    height: 34.72vh; /* 500px / 1440px * 100 - Keeps original 2:1 ratio */
 }
 .horizontal-container5 {
     display: flex;
     flex-direction: row;
-    gap: 300px;
+    gap: 11.72vw; /* 300px / 2560px * 100 */
     align-items: flex-start; /* Changed from center to align tops */
-    margin-top: -480px;
-    margin-left: 1200px;
+    margin-top: -33.3vh; /* -480px / 1440px * 100 */
+    margin-left: 46.88vw; /* 1200px / 2560px * 100 */
 }
 
 .vertical-container5 {
     display: flex;
     flex-direction: column;
-    gap: 300px; /* Adjust vertical spacing as needed */
+    gap: 20.83vh; /* 300px / 1440px * 100 - Adjust vertical spacing as needed */
 }
 
 .wordofp5 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 20px;
+    font-size: 1.39vh; /* 20px / 1440px * 100 */
 }
 
 .wordofs5 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 20px;
+    font-size: 1.39vh; /* 20px / 1440px * 100 */
     /* Remove margin-left - flex handles positioning */
 }
 
 .wordofw5 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 20px;
+    font-size: 1.39vh; /* 20px / 1440px * 100 */
     /* Remove margins - flex handles positioning */
 }
 .wordofp5 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 30px;
+    font-size: 2.08vh; /* 30px / 1440px * 100 */
 }
 
 .wordofs5 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 30px;
+    font-size: 2.08vh; /* 30px / 1440px * 100 */
     /* Remove margin-left - flex handles positioning */
 }
 
 .wordofw5 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 30px;
+    font-size: 2.08vh; /* 30px / 1440px * 100 */
     /* Remove margins - flex handles positioning */
 }
 .number3 {
-    margin-top: 500px;
+    margin-top: 34.7vh; /* 500px / 1440px * 100 */
     width: 100%;
-    height: 60px;
+    height: 4.17vh; /* 60px / 1440px * 100 */
     background-color: rgb(180, 0, 0);
     text-align: center;
-    font-size: 36px;           /* Bigger text */
+    font-size: 2.5vh; /* 36px / 1440px * 100 */
     font-family: 'Impact', 'Arial Black', sans-serif;  /* Cool bold font */
     font-weight: bold;         /* Extra bold */
     color: rgb(41, 5, 5);              /* White text for contrast */
-    line-height: 60px;        /* Centers text vertically in the 60px height */
+    line-height: 4.17vh; /* 60px / 1440px * 100 - Centers text vertically in the 60px height */
 }
 .tekst6{
-    margin-top:-50px;
+    margin-top: -3.47vh; /* -50px / 1440px * 100 */
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 50px;
+    font-size: 3.47vh; /* 50px / 1440px * 100 */
 }
 .slika6 img {
     margin-top: 0px;
     margin-left: 0px;
-    width: 860px;
-    height: 860px;  /* Keeps original 2:1 ratio */
+    width: 33.59vw; /* 860px / 2560px * 100 */
+    height: 59.72vh; /* 860px / 1440px * 100 - Keeps original 2:1 ratio */
 }
 .horizontal-container6 {
     display: flex;
     flex-direction: row;
-    gap: 300px;
+    gap: 11.72vw; /* 300px / 2560px * 100 */
     align-items: flex-start; /* Changed from center to align tops */
-    margin-top: -480px;
-    margin-left: 1200px;
+    margin-top: -33.3vh; /* -480px / 1440px * 100 */
+    margin-left: 46.88vw; /* 1200px / 2560px * 100 */
 }
 
 .vertical-container6 {
     display: flex;
     flex-direction: column;
-    gap: 300px; /* Adjust vertical spacing as needed */
+    gap: 20.83vh; /* 300px / 1440px * 100 - Adjust vertical spacing as needed */
 }
 
 .wordofp6 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 20px;
+    font-size: 1.39vh; /* 20px / 1440px * 100 */
 }
 
 .wordofs6 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 20px;
+    font-size: 1.39vh; /* 20px / 1440px * 100 */
     /* Remove margin-left - flex handles positioning */
 }
 
 .wordofw6 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 20px;
+    font-size: 1.39vh; /* 20px / 1440px * 100 */
     /* Remove margins - flex handles positioning */
 }
 .wordofp6 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 30px;
+    font-size: 2.08vh; /* 30px / 1440px * 100 */
 }
 
 .wordofs6 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 30px;
+    font-size: 2.08vh; /* 30px / 1440px * 100 */
     /* Remove margin-left - flex handles positioning */
 }
 
 .wordofw6 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 30px;
+    font-size: 2.08vh; /* 30px / 1440px * 100 */
     /* Remove margins - flex handles positioning */
 }
 .number2 {
-    margin-top: 500px;
+    margin-top: 34.7vh; /* 500px / 1440px * 100 */
     width: 100%;
-    height: 60px;
+    height: 4.17vh; /* 60px / 1440px * 100 */
     background-color: rgb(180, 0, 0);
     text-align: center;
-    font-size: 36px;           /* Bigger text */
+    font-size: 2.5vh; /* 36px / 1440px * 100 */
     font-family: 'Impact', 'Arial Black', sans-serif;  /* Cool bold font */
     font-weight: bold;         /* Extra bold */
     color: rgb(41, 5, 5);              /* White text for contrast */
-    line-height: 60px;        /* Centers text vertically in the 60px height */
+    line-height: 4.17vh; /* 60px / 1440px * 100 - Centers text vertically in the 60px height */
 }
 .tekst7{
-    margin-top:-50px;
+    margin-top: -3.47vh; /* -50px / 1440px * 100 */
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 50px;
+    font-size: 3.47vh; /* 50px / 1440px * 100 */
 }
 .slika7 img {
     margin-top: 0px;
     margin-left: 0px;
-    width: 860px;
-    height: 560px;  /* Keeps original 2:1 ratio */
+    width: 33.59vw; /* 860px / 2560px * 100 */
+    height: 38.89vh; /* 560px / 1440px * 100 - Keeps original 2:1 ratio */
 }
 .horizontal-container7 {
     display: flex;
     flex-direction: row;
-    gap: 300px;
+    gap: 11.72vw; /* 300px / 2560px * 100 */
     align-items: flex-start; /* Changed from center to align tops */
-    margin-top: -480px;
-    margin-left: 1200px;
+    margin-top: -33.3vh; /* -480px / 1440px * 100 */
+    margin-left: 46.88vw; /* 1200px / 2560px * 100 */
 }
 
 .vertical-container7 {
     display: flex;
     flex-direction: column;
-    gap: 300px; /* Adjust vertical spacing as needed */
+    gap: 20.83vh; /* 300px / 1440px * 100 - Adjust vertical spacing as needed */
 }
 
 .wordofp7 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 20px;
+    font-size: 1.39vh; /* 20px / 1440px * 100 */
 }
 
 .wordofs7 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 20px;
+    font-size: 1.39vh; /* 20px / 1440px * 100 */
     /* Remove margin-left - flex handles positioning */
 }
 
 .wordofw7  {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 20px;
+    font-size: 1.39vh; /* 20px / 1440px * 100 */
     /* Remove margins - flex handles positioning */
 }
 .wordofp7 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 30px;
+    font-size: 2.08vh; /* 30px / 1440px * 100 */
 }
 
 .wordofs7 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 30px;
+    font-size: 2.08vh; /* 30px / 1440px * 100 */
     /* Remove margin-left - flex handles positioning */
 }
 
 .wordofw7 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 30px;
+    font-size: 2.08vh; /* 30px / 1440px * 100 */
     /* Remove margins - flex handles positioning */
 }
 .number1 {
-    margin-top: 500px;
+    margin-top: 34.7vh; /* 500px / 1440px * 100 */
     width: 100%;
-    height: 60px;
+    height: 4.17vh; /* 60px / 1440px * 100 */
     background-color: rgb(180, 0, 0);
     text-align: center;
-    font-size: 36px;           /* Bigger text */
+    font-size: 2.5vh; /* 36px / 1440px * 100 */
     font-family: 'Impact', 'Arial Black', sans-serif;  /* Cool bold font */
     font-weight: bold;         /* Extra bold */
     color: rgb(41, 5, 5);              /* White text for contrast */
-    line-height: 60px;        /* Centers text vertically in the 60px height */
+    line-height: 4.17vh; /* 60px / 1440px * 100 - Centers text vertically in the 60px height */
 }
 .tekst8{
-    margin-top:-50px;
+    margin-top: -3.47vh; /* -50px / 1440px * 100 */
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 50px;
+    font-size: 3.47vh; /* 50px / 1440px * 100 */
 }
 .slika8 img {
     margin-top: 0px;
     margin-left: 0px;
-    width: 860px;
-    height: 560px;  /* Keeps original 2:1 ratio */
+    width: 33.59vw; /* 860px / 2560px * 100 */
+    height: 38.89vh; /* 560px / 1440px * 100 - Keeps original 2:1 ratio */
 }
 .horizontal-container8 {
     display: flex;
     flex-direction: row;
-    gap: 300px;
+    gap: 11.72vw; /* 300px / 2560px * 100 */
     align-items: flex-start; /* Changed from center to align tops */
-    margin-top: -480px;
-    margin-left: 1200px;
+    margin-top: -33.3vh; /* -480px / 1440px * 100 */
+    margin-left: 46.88vw; /* 1200px / 2560px * 100 */
 }
 
 .vertical-container8 {
     display: flex;
     flex-direction: column;
-    gap: 300px; /* Adjust vertical spacing as needed */
+    gap: 20.83vh; /* 300px / 1440px * 100 - Adjust vertical spacing as needed */
 }
 
 .wordofp8 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 20px;
+    font-size: 1.39vh; /* 20px / 1440px * 100 */
 }
 
 .wordofs8 {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 20px;
+    font-size: 1.39vh; /* 20px / 1440px * 100 */
     /* Remove margin-left - flex handles positioning */
 }
 
 .wordofw8  {
     text-align: center;
     color: rgb(200, 215, 215);
-    font-size: 20px;
+    font-size: 1.39vh; /* 20px / 1440px * 100 */
     /* Remove margins - flex handles positioning */
 }
 .wordofp8 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 30px;
+    font-size: 2.08vh; /* 30px / 1440px * 100 */
 }
 
 .wordofs8 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 30px;
+    font-size: 2.08vh; /* 30px / 1440px * 100 */
     /* Remove margin-left - flex handles positioning */
 }
 
 .wordofw8 span:nth-child(1) {
     text-align: center;
     color: rgb(2, 255, 255);
-    font-size: 30px;
+    font-size: 2.08vh; /* 30px / 1440px * 100 */
     /* Remove margins - flex handles positioning */
 }
 footer {
-    margin-top: 700px;
+    margin-top: 48.61vh; /* 700px / 1440px * 100 */
     background-color: black;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 1.39vh; /* 20px / 1440px * 100 */
 }
 
 
