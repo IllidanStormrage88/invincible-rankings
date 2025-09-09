@@ -101,7 +101,7 @@ h1 {
 }
 
 .tekst {
-    margin-top: -10px;
+    margin-top: 0px;
     text-align: center;
     color: rgb(2, 255, 255);
     font-size: 50px;
@@ -179,7 +179,7 @@ h1 {
 }
 
 .tekst0 {
-    margin-top: -10px;
+    margin-top: 0px;
     text-align: center;
     color: rgb(2, 255, 255);
     font-size: 50px;
@@ -257,7 +257,7 @@ h1 {
 }
 
 .tekst1 {
-    margin-top: -10px;
+    margin-top: 0px;
     text-align: center;
     color: rgb(2, 255, 255);
     font-size: 50px;
@@ -335,7 +335,7 @@ h1 {
 }
 
 .tekst2 {
-    margin-top: -10px;
+    margin-top: 0px;
     text-align: center;
     color: rgb(2, 255, 255);
     font-size: 50px;
@@ -413,7 +413,7 @@ h1 {
 }
 
 .tekst3 {
-    margin-top: -10px;
+    margin-top: 0px;
     text-align: center;
     color: rgb(2, 255, 255);
     font-size: 50px;
@@ -491,7 +491,7 @@ h1 {
 }
 
 .tekst4 {
-    margin-top: -10px;
+    margin-top: 0px;
     text-align: center;
     color: rgb(2, 255, 255);
     font-size: 50px;
@@ -647,7 +647,7 @@ h1 {
 }
 
 .tekst6 {
-    margin-top: -10px;
+    margin-top: 0px;
     text-align: center;
     color: rgb(2, 255, 255);
     font-size: 50px;
@@ -725,7 +725,7 @@ h1 {
 }
 
 .tekst7 {
-    margin-top: -10px;
+    margin-top: 0px;
     text-align: center;
     color: rgb(2, 255, 255);
     font-size: 50px;
@@ -803,7 +803,7 @@ h1 {
 }
 
 .tekst8 {
-    margin-top: -10px;
+    margin-top: 0px;
     text-align: center;
     color: rgb(2, 255, 255);
     font-size: 50px;
@@ -874,6 +874,7 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
 
 
 
